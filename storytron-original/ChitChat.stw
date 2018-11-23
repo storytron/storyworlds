@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="10" version="547" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="10" version="548" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright/>
-<startingVerb Label="yes, please"/>
-<startingRole Label="YesPleasee"/>
-<startingOption Label="give"/>
+<startingVerb Label="depart for"/>
+<startingRole Label="NextUp2Protag"/>
+<startingOption Label="greet"/>
 <propTraits>
 <attribute Label="Light_Heavy"/>
 <attribute Label="Small_Big"/>
@@ -34544,7 +34544,7 @@ The bell has never been rung since.</description>
 <token Arg="" Label="PastDirObject">
 <token Arg="" Label="ThisCausalEvent"/>
 </token>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="AreSameStage">
 <token Arg="" Label="ThisLocation"/>
