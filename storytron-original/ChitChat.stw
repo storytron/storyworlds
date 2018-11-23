@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="10" version="546" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
-<dictionaryVersion Label="0.937"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="10" version="547" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionaryVersion Label="0.939"/>
 <copyright/>
-<startingVerb Label="your first choice?"/>
-<startingRole Label="Protagonist"/>
-<startingOption Label="greet"/>
+<startingVerb Label="yes, please"/>
+<startingRole Label="YesPleasee"/>
+<startingOption Label="give"/>
 <propTraits>
 <attribute Label="Light_Heavy"/>
 <attribute Label="Small_Big"/>
@@ -1563,7 +1563,7 @@ The bell has never been rung since.</description>
 <token Arg="" Label="AcceptableActors">
 <token Arg="" Label="AllActorsWho">
 <token Arg="" Label="AreSameActor">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 <token Arg="" Label="CandidateActor"/>
 </token>
 </token>
@@ -1620,7 +1620,7 @@ The bell has never been rung since.</description>
 <token Arg="" Label="AcceptableActors">
 <token Arg="" Label="AllActorsWho">
 <token Arg="" Label="AreSameActor">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 <token Arg="" Label="CandidateActor"/>
 </token>
 </token>
@@ -1983,7 +1983,7 @@ The bell has never been rung since.</description>
 <token Arg="" Label="AcceptableActors">
 <token Arg="" Label="AllActorsWho">
 <token Arg="" Label="AreSameActor">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 <token Arg="" Label="CandidateActor"/>
 </token>
 </token>
@@ -2076,7 +2076,7 @@ The bell has never been rung since.</description>
 <token Arg="" Label="AcceptableActors">
 <token Arg="" Label="AllActorsWho">
 <token Arg="" Label="AreSameActor">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 <token Arg="" Label="CandidateActor"/>
 </token>
 </token>
@@ -2203,46 +2203,6 @@ The bell has never been rung since.</description>
 <token Arg="" Label="CandidateQuantifier"/>
 <token Arg="0.0" Label="BNumberConstant"/>
 </token>
-</token>
-</script>
-</socketSpecs>
-</option>
-<option Label="OK">
-<acceptable>
-<token Arg="" Label="OptionAcceptable">
-<token Arg="" Label="true"/>
-</token>
-</acceptable>
-<desirable>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</desirable>
-<socketSpecs Index="0">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="1">
-<script>
-<token Arg="" Label="AcceptableVerbs">
-<token Arg="" Label="AllVerbsWhich">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
 </token>
 </script>
 </socketSpecs>
@@ -13936,7 +13896,7 @@ The bell has never been rung since.</description>
 <token Arg="" Label="AcceptableActors">
 <token Arg="" Label="AllActorsWho">
 <token Arg="" Label="AreSameActor">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 <token Arg="" Label="CandidateActor"/>
 </token>
 </token>
@@ -34577,7 +34537,7 @@ The bell has never been rung since.</description>
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="AreSameActor">
@@ -34607,7 +34567,7 @@ The bell has never been rung since.</description>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -34624,12 +34584,12 @@ The bell has never been rung since.</description>
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="AreSameStage">
@@ -34677,7 +34637,6 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="8"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34726,9 +34685,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="8"/>
 <optionlink Index="9"/>
 <optionlink Index="10"/>
-<optionlink Index="11"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34787,9 +34746,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="11"/>
 <optionlink Index="12"/>
 <optionlink Index="13"/>
-<optionlink Index="14"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34833,9 +34792,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="14"/>
 <optionlink Index="15"/>
 <optionlink Index="16"/>
-<optionlink Index="17"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34890,9 +34849,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="17"/>
 <optionlink Index="18"/>
 <optionlink Index="19"/>
-<optionlink Index="20"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34951,9 +34910,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="20"/>
 <optionlink Index="21"/>
 <optionlink Index="22"/>
-<optionlink Index="23"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35008,9 +34967,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="23"/>
 <optionlink Index="24"/>
 <optionlink Index="25"/>
-<optionlink Index="26"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35092,9 +35051,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="26"/>
 <optionlink Index="27"/>
 <optionlink Index="28"/>
-<optionlink Index="29"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35190,9 +35149,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="29"/>
 <optionlink Index="30"/>
 <optionlink Index="31"/>
-<optionlink Index="32"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35316,10 +35275,10 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="32"/>
 <optionlink Index="33"/>
 <optionlink Index="34"/>
 <optionlink Index="35"/>
-<optionlink Index="36"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35418,9 +35377,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="36"/>
 <optionlink Index="37"/>
 <optionlink Index="38"/>
-<optionlink Index="39"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35473,12 +35432,12 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="39"/>
 <optionlink Index="40"/>
 <optionlink Index="41"/>
 <optionlink Index="42"/>
 <optionlink Index="43"/>
 <optionlink Index="44"/>
-<optionlink Index="45"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35521,8 +35480,8 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="45"/>
 <optionlink Index="46"/>
-<optionlink Index="47"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35612,8 +35571,8 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="47"/>
 <optionlink Index="48"/>
-<optionlink Index="49"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35718,9 +35677,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="49"/>
 <optionlink Index="50"/>
 <optionlink Index="51"/>
-<optionlink Index="52"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36022,9 +35981,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="52"/>
 <optionlink Index="53"/>
 <optionlink Index="54"/>
-<optionlink Index="55"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36132,7 +36091,7 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
-<optionlink Index="56"/>
+<optionlink Index="55"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36263,9 +36222,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="56"/>
 <optionlink Index="57"/>
 <optionlink Index="58"/>
-<optionlink Index="59"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36454,9 +36413,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="59"/>
 <optionlink Index="60"/>
 <optionlink Index="61"/>
-<optionlink Index="62"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36469,7 +36428,7 @@ The bell has never been rung since.</description>
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -36527,9 +36486,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="62"/>
 <optionlink Index="63"/>
 <optionlink Index="64"/>
-<optionlink Index="65"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36541,7 +36500,7 @@ The bell has never been rung since.</description>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -36598,11 +36557,11 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="65"/>
 <optionlink Index="66"/>
 <optionlink Index="67"/>
 <optionlink Index="68"/>
 <optionlink Index="69"/>
-<optionlink Index="70"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36655,9 +36614,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="70"/>
 <optionlink Index="71"/>
 <optionlink Index="72"/>
-<optionlink Index="73"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36704,25 +36663,25 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="73"/>
 <optionlink Index="74"/>
 <optionlink Index="75"/>
 <optionlink Index="76"/>
 <optionlink Index="77"/>
 <optionlink Index="78"/>
-<optionlink Index="79"/>
 </role>
 <role>
 <assumeRoleIf>
 <token Arg="" Label="AssumeRoleIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 </token>
 </assumeRoleIf>
+<optionlink Index="79"/>
 <optionlink Index="80"/>
 <optionlink Index="81"/>
-<optionlink Index="82"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36731,14 +36690,14 @@ The bell has never been rung since.</description>
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="PastDirObject">
 <token Arg="" Label="ThisCausalEvent"/>
 </token>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="AreSameStage">
 <token Arg="" Label="ThisLocation"/>
@@ -36749,7 +36708,7 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="83"/>
+<optionlink Index="82"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36820,9 +36779,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="83"/>
 <optionlink Index="84"/>
 <optionlink Index="85"/>
-<optionlink Index="86"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36923,9 +36882,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="86"/>
 <optionlink Index="87"/>
 <optionlink Index="88"/>
-<optionlink Index="89"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36979,7 +36938,7 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
-<optionlink Index="90"/>
+<optionlink Index="89"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -37036,7 +36995,7 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
-<optionlink Index="91"/>
+<optionlink Index="90"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -37140,12 +37099,12 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="91"/>
 <optionlink Index="92"/>
 <optionlink Index="93"/>
 <optionlink Index="94"/>
 <optionlink Index="95"/>
 <optionlink Index="96"/>
-<optionlink Index="97"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -37235,13 +37194,13 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="97"/>
 <optionlink Index="98"/>
 <optionlink Index="99"/>
 <optionlink Index="100"/>
 <optionlink Index="101"/>
 <optionlink Index="102"/>
 <optionlink Index="103"/>
-<optionlink Index="104"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -37331,13 +37290,13 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="104"/>
 <optionlink Index="105"/>
 <optionlink Index="106"/>
 <optionlink Index="107"/>
 <optionlink Index="108"/>
 <optionlink Index="109"/>
 <optionlink Index="110"/>
-<optionlink Index="111"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -37485,7 +37444,7 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
-<optionlink Index="112"/>
+<optionlink Index="111"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -37615,7 +37574,7 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
-<optionlink Index="113"/>
+<optionlink Index="112"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -37626,11 +37585,11 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </assumeRoleIf>
+<optionlink Index="113"/>
 <optionlink Index="114"/>
 <optionlink Index="115"/>
 <optionlink Index="116"/>
 <optionlink Index="117"/>
-<optionlink Index="118"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -37766,7 +37725,7 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
-<optionlink Index="119"/>
+<optionlink Index="118"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -37891,7 +37850,7 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
-<optionlink Index="120"/>
+<optionlink Index="119"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -37972,10 +37931,10 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="120"/>
 <optionlink Index="121"/>
 <optionlink Index="122"/>
 <optionlink Index="123"/>
-<optionlink Index="124"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -38099,11 +38058,11 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="124"/>
 <optionlink Index="125"/>
 <optionlink Index="126"/>
 <optionlink Index="127"/>
 <optionlink Index="128"/>
-<optionlink Index="129"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -38183,12 +38142,12 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="129"/>
 <optionlink Index="130"/>
 <optionlink Index="131"/>
 <optionlink Index="132"/>
 <optionlink Index="133"/>
 <optionlink Index="134"/>
-<optionlink Index="135"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -38207,7 +38166,7 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="136"/>
+<optionlink Index="135"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -38226,11 +38185,11 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </assumeRoleIf>
+<optionlink Index="136"/>
 <optionlink Index="137"/>
 <optionlink Index="138"/>
 <optionlink Index="139"/>
 <optionlink Index="140"/>
-<optionlink Index="141"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -38351,6 +38310,7 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="141"/>
 <optionlink Index="142"/>
 <optionlink Index="143"/>
 <optionlink Index="144"/>
@@ -38358,7 +38318,6 @@ The bell has never been rung since.</description>
 <optionlink Index="146"/>
 <optionlink Index="147"/>
 <optionlink Index="148"/>
-<optionlink Index="149"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -38430,10 +38389,10 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="149"/>
 <optionlink Index="150"/>
 <optionlink Index="151"/>
 <optionlink Index="152"/>
-<optionlink Index="153"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -38462,11 +38421,11 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="153"/>
 <optionlink Index="154"/>
 <optionlink Index="155"/>
 <optionlink Index="156"/>
 <optionlink Index="157"/>
-<optionlink Index="158"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -38552,8 +38511,8 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="158"/>
 <optionlink Index="159"/>
-<optionlink Index="160"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -38629,12 +38588,12 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="160"/>
 <optionlink Index="161"/>
 <optionlink Index="162"/>
 <optionlink Index="163"/>
 <optionlink Index="164"/>
 <optionlink Index="165"/>
-<optionlink Index="166"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -38710,9 +38669,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="166"/>
 <optionlink Index="167"/>
 <optionlink Index="168"/>
-<optionlink Index="169"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -38788,9 +38747,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="169"/>
 <optionlink Index="170"/>
 <optionlink Index="171"/>
-<optionlink Index="172"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -38843,11 +38802,11 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="172"/>
 <optionlink Index="173"/>
 <optionlink Index="174"/>
 <optionlink Index="175"/>
 <optionlink Index="176"/>
-<optionlink Index="177"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -38855,6 +38814,25 @@ The bell has never been rung since.</description>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
 <token Arg="" Label="ThisDirObject"/>
+</token>
+</token>
+</assumeRoleIf>
+<optionlink Index="177"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AND">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="" Label="ThisDirObject"/>
+</token>
+<token Arg="" Label="NOT">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="Rick" Label="ActorConstant"/>
+</token>
+</token>
 </token>
 </token>
 </assumeRoleIf>
@@ -38868,35 +38846,16 @@ The bell has never been rung since.</description>
 <token Arg="" Label="ReactingActor"/>
 <token Arg="" Label="ThisDirObject"/>
 </token>
-<token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
-</token>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 </token>
 </token>
 </assumeRoleIf>
 <optionlink Index="179"/>
-</role>
-<role>
-<assumeRoleIf>
-<token Arg="" Label="AssumeRoleIf">
-<token Arg="" Label="AND">
-<token Arg="" Label="AreSameActor">
-<token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="ThisDirObject"/>
-</token>
-<token Arg="" Label="AreSameActor">
-<token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
-</token>
-</token>
-</token>
-</assumeRoleIf>
 <optionlink Index="180"/>
 <optionlink Index="181"/>
-<optionlink Index="182"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -38952,9 +38911,9 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="182"/>
 <optionlink Index="183"/>
 <optionlink Index="184"/>
-<optionlink Index="185"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -38974,7 +38933,7 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="186"/>
+<optionlink Index="185"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -39099,11 +39058,11 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="186"/>
 <optionlink Index="187"/>
 <optionlink Index="188"/>
 <optionlink Index="189"/>
 <optionlink Index="190"/>
-<optionlink Index="191"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -39133,7 +39092,7 @@ The bell has never been rung since.</description>
 <token Arg="0.0" Label="BNumberConstant"/>
 </token>
 </script>
-<optionlink Index="192"/>
+<optionlink Index="191"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -39218,12 +39177,12 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="192"/>
 <optionlink Index="193"/>
 <optionlink Index="194"/>
 <optionlink Index="195"/>
 <optionlink Index="196"/>
 <optionlink Index="197"/>
-<optionlink Index="198"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -39308,12 +39267,12 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="198"/>
 <optionlink Index="199"/>
 <optionlink Index="200"/>
 <optionlink Index="201"/>
 <optionlink Index="202"/>
 <optionlink Index="203"/>
-<optionlink Index="204"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -39396,11 +39355,11 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="204"/>
 <optionlink Index="205"/>
 <optionlink Index="206"/>
 <optionlink Index="207"/>
 <optionlink Index="208"/>
-<optionlink Index="209"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -39483,10 +39442,10 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="209"/>
 <optionlink Index="210"/>
 <optionlink Index="211"/>
 <optionlink Index="212"/>
-<optionlink Index="213"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -39498,12 +39457,12 @@ The bell has never been rung since.</description>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisDirObject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="214"/>
+<optionlink Index="213"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -39515,7 +39474,7 @@ The bell has never been rung since.</description>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="CausalEventHappened">
 <token Arg="" Label="AND3">
@@ -39550,8 +39509,8 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </assumeRoleIf>
+<optionlink Index="214"/>
 <optionlink Index="215"/>
-<optionlink Index="216"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -39564,7 +39523,7 @@ The bell has never been rung since.</description>
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="NOT">
@@ -39615,11 +39574,11 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="216"/>
 <optionlink Index="217"/>
 <optionlink Index="218"/>
 <optionlink Index="219"/>
 <optionlink Index="220"/>
-<optionlink Index="221"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -39676,12 +39635,12 @@ The bell has never been rung since.</description>
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="AreSameStage">
 <token Arg="" Label="ThisLocation"/>
@@ -39692,7 +39651,7 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="222"/>
+<optionlink Index="221"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -39744,8 +39703,8 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="222"/>
 <optionlink Index="223"/>
-<optionlink Index="224"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -39756,8 +39715,8 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </assumeRoleIf>
+<optionlink Index="224"/>
 <optionlink Index="225"/>
-<optionlink Index="226"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -39787,9 +39746,9 @@ The bell has never been rung since.</description>
 <token Arg="0.0" Label="BNumberConstant"/>
 </token>
 </script>
+<optionlink Index="226"/>
 <optionlink Index="227"/>
 <optionlink Index="228"/>
-<optionlink Index="229"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -39831,9 +39790,9 @@ The bell has never been rung since.</description>
 <token Arg="0.0" Label="BNumberConstant"/>
 </token>
 </script>
+<optionlink Index="229"/>
 <optionlink Index="230"/>
 <optionlink Index="231"/>
-<optionlink Index="232"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -39897,8 +39856,8 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="232"/>
 <optionlink Index="233"/>
-<optionlink Index="234"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -39952,11 +39911,11 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </script>
+<optionlink Index="234"/>
 <optionlink Index="235"/>
 <optionlink Index="236"/>
 <optionlink Index="237"/>
 <optionlink Index="238"/>
-<optionlink Index="239"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -39967,7 +39926,7 @@ The bell has never been rung since.</description>
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="240"/>
+<optionlink Index="239"/>
 </role>
 </roleSet>
 <categorySet>
@@ -39988,7 +39947,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40034,7 +39995,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40091,7 +40054,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40149,7 +40114,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40207,7 +40174,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40240,7 +40209,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40269,39 +40240,6 @@ The bell has never been rung since.</description>
 </script>
 </socket>
 </verb>
-<verb Label="OK" Witnesses="ANYBODY_ON_STAGE">
-<description> </description>
-<hijackable>true</hijackable>
-<timeToPrepare>1</timeToPrepare>
-<timeToExecute>1</timeToExecute>
-<category>System</category>
-<expression>null</expression>
-<trivial_Momentous>0.0</trivial_Momentous>
-<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
-<suffix>
-<token Arg="" Label="WordsocketText">
-<token Arg="" Label="TextConstant"/>
-</token>
-</suffix>
-<script>
-<token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
-</token>
-</script>
-</socket>
-<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
-<suffix>
-<token Arg="" Label="WordsocketText">
-<token Arg="" Label="TextConstant"/>
-</token>
-</suffix>
-<script>
-<token Arg="" Label="WordsocketText">
-<token Arg="" Label="TheName"/>
-</token>
-</script>
-</socket>
-</verb>
 <verb Label="depart for" Witnesses="ANYBODY_ON_STAGE">
 <description> </description>
 <hijackable>false</hijackable>
@@ -40318,7 +40256,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40382,7 +40322,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40441,7 +40383,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40475,7 +40419,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40521,7 +40467,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40581,7 +40529,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40651,7 +40601,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40721,7 +40673,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40767,7 +40721,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40837,7 +40793,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40907,7 +40865,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40977,7 +40937,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41024,7 +40986,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41070,7 +41034,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41116,7 +41082,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41162,7 +41130,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41256,7 +41226,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41339,7 +41311,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41409,7 +41383,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41491,7 +41467,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41574,7 +41552,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41655,7 +41635,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41702,7 +41684,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41748,7 +41732,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41765,7 +41751,7 @@ The bell has never been rung since.</description>
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 <token Arg=", " Label="TextConstant"/>
 <token Arg="s, " Label="TextConstant"/>
@@ -41783,7 +41769,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="AccusativePronoun"/>
+<token Arg="" Label="AccusativePronoun">
+<token Arg="" Label="ThisDirObject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41834,9 +41822,11 @@ The bell has never been rung since.</description>
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisDirObject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
-<token Arg="" Label="AccusativePronoun"/>
+<token Arg="" Label="AccusativePronoun">
+<token Arg="" Label="ThisDirObject"/>
+</token>
 <token Arg="" Label="TheName"/>
 </token>
 </token>
@@ -41860,7 +41850,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41899,7 +41891,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41952,7 +41946,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42012,7 +42008,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42071,7 +42069,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42118,7 +42118,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42152,7 +42154,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42198,7 +42202,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42268,7 +42274,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42338,7 +42346,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42397,7 +42407,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42431,7 +42443,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42490,7 +42504,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42536,7 +42552,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42582,7 +42600,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42640,7 +42660,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42750,7 +42772,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42808,7 +42832,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42877,7 +42903,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42923,7 +42951,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42971,7 +43001,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43017,7 +43049,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43075,7 +43109,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43133,7 +43169,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43191,7 +43229,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43249,7 +43289,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43264,7 +43306,7 @@ The bell has never been rung since.</description>
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="TheName"/>
 <token Arg="" Label="Concat">
@@ -43283,7 +43325,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="AccusativePronoun"/>
+<token Arg="" Label="AccusativePronoun">
+<token Arg="" Label="ThisDirObject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43334,7 +43378,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43381,7 +43427,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43410,9 +43458,11 @@ The bell has never been rung since.</description>
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisDirObject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
-<token Arg="" Label="AccusativePronoun"/>
+<token Arg="" Label="AccusativePronoun">
+<token Arg="" Label="ThisDirObject"/>
+</token>
 <token Arg="" Label="TheName"/>
 </token>
 </token>
@@ -43465,7 +43515,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43523,7 +43575,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43581,7 +43635,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43628,7 +43684,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43687,7 +43745,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43733,7 +43793,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43782,7 +43844,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43798,7 +43862,7 @@ The bell has never been rung since.</description>
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="Concat3">
@@ -43849,7 +43913,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43896,7 +43962,7 @@ The bell has never been rung since.</description>
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="Concat">
@@ -43916,7 +43982,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="AccusativePronoun"/>
+<token Arg="" Label="AccusativePronoun">
+<token Arg="" Label="ThisDirObject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43950,7 +44018,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -44008,7 +44078,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -44066,7 +44138,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -44112,7 +44186,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -44170,7 +44246,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -44186,7 +44264,7 @@ The bell has never been rung since.</description>
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Rick" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="Concat3">
@@ -44215,7 +44293,9 @@ The bell has never been rung since.</description>
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="AccusativePronoun"/>
+<token Arg="" Label="AccusativePronoun">
+<token Arg="" Label="ThisDirObject"/>
+</token>
 </token>
 </script>
 </socket>
