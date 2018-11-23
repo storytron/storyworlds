@@ -1,0 +1,2922 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="136" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionaryVersion Label="0.939"/>
+<copyright>In this storyworld I was trying to come up with a simpler way to set and reset conversations between two actors than how I initially attempted to do so in the Siboot and InConversation storyworlds.
+
+The actors and their initial stages in this storyworld are:
+
+Jack - Golf Course (Protagonist)
+Kate - Beach Camp
+Sawyer - Beach Camp
+Ana Lucia - Beach Camp
+Hurley - Beach Camp
+Locke - Swan Station
+
+Some things about the storyworld that you should know:
+
+1. The "greet" verb only sets conversations between Jack and the other characters.
+
+2. If two characters are in a conversation, they will never appear as a direct object of the "greet" verb. (Kate and Sawyer are set in conversation at the start of the storyworld. You will never be able to "greet" them.)
+
+3. If two characters other than the "greet" subject and direct object are in a conversation on the same stage, their conversation status will not be affected.
+
+4. If Actor1 greets Actor2 and then greets Actor3 on the same stage, their conversation status with Actor2 will be reset.
+
+5. The "greet" verb is visible only if there is an actor on the stage available for conversation.
+
+6. The "want to find" verb will reset Jack's current conversations when he leaves a stage.
+
+7. Fate's "SetActorsInConversation" and "ResetActorConversation" are left visible to everybody everywhere so you can see them in operation.
+
+</copyright>
+<startingVerb Label="greet"/>
+<startingRole Label="ThisSubject"/>
+<startingOption Label="wait"/>
+<propTraits/>
+<propTextTraits/>
+<stageTraits/>
+<stageTextTraits/>
+<outerTraits rvisible="false">
+<attribute Label="Quiet_Chatty" rvisible="false" visible="false"/>
+<attribute Label="Cool_Volatile" rvisible="false" visible="false"/>
+<attribute Label="TalkingToJack"/>
+<attribute Label="TalkingToKate"/>
+<attribute Label="TalkingToLocke"/>
+<attribute Label="TalkingToSawyer"/>
+<attribute Label="TalkingToAnaLucia"/>
+<attribute Label="TalkingToHurley"/>
+</outerTraits>
+<actorTextTraits/>
+<actorSet>
+<actor Label="Fate">
+<attributes>
+<attribute Name="description">Fate makes things happen </attribute>
+<attribute Name="active">true</attribute>
+<attribute Name="female">true</attribute>
+<attribute Name="dontMoveMe">false</attribute>
+<attribute Name="unconscious">false</attribute>
+<attribute Name="location">nowhere</attribute>
+<attribute Name="spyingOn">Fate</attribute>
+<attribute Name="targetStage">nowhere</attribute>
+<attribute Name="occupiedUntil">0</attribute>
+<attribute Name="cBored">0</attribute>
+<attribute Name="howLongToSpy">0</attribute>
+</attributes>
+</actor>
+<actor Label="Jack">
+<attributes>
+<attribute Name="description">YOU are the Protagonist!</attribute>
+<attribute Name="image">image2790787467078488115.jpg</attribute>
+<attribute Name="active">true</attribute>
+<attribute Name="female">false</attribute>
+<attribute Name="dontMoveMe">false</attribute>
+<attribute Name="unconscious">false</attribute>
+<attribute Name="location">Golf Course</attribute>
+<attribute Name="spyingOn">Fate</attribute>
+<attribute Name="targetStage">nowhere</attribute>
+<attribute Name="occupiedUntil">0</attribute>
+<attribute Name="cBored">0</attribute>
+<attribute Name="howLongToSpy">0</attribute>
+<attribute Name="TalkingToJack">-0.9999</attribute>
+<attribute Name="TalkingToKate">-0.9999</attribute>
+<attribute Name="TalkingToLocke">-0.9999</attribute>
+<attribute Name="TalkingToSawyer">-0.9999</attribute>
+<attribute Name="TalkingToAnaLucia">-0.9999</attribute>
+<attribute Name="TalkingToHurley">-0.9999</attribute>
+</attributes>
+</actor>
+<actor Label="Kate">
+<attributes>
+<attribute Name="description"> </attribute>
+<attribute Name="image">image3590833087402132633.jpg</attribute>
+<attribute Name="active">true</attribute>
+<attribute Name="female">true</attribute>
+<attribute Name="dontMoveMe">true</attribute>
+<attribute Name="unconscious">false</attribute>
+<attribute Name="location">Beach Camp</attribute>
+<attribute Name="spyingOn">Fate</attribute>
+<attribute Name="targetStage">nowhere</attribute>
+<attribute Name="occupiedUntil">0</attribute>
+<attribute Name="cBored">0</attribute>
+<attribute Name="howLongToSpy">0</attribute>
+<attribute Name="TalkingToJack">-0.9999</attribute>
+<attribute Name="TalkingToKate">-0.9999</attribute>
+<attribute Name="TalkingToLocke">-0.9999</attribute>
+<attribute Name="TalkingToSawyer">-0.9999</attribute>
+<attribute Name="TalkingToAnaLucia">-0.9999</attribute>
+<attribute Name="TalkingToHurley">-0.9999</attribute>
+</attributes>
+</actor>
+<actor Label="Sawyer">
+<attributes>
+<attribute Name="description"> </attribute>
+<attribute Name="image">image457039448783475145.jpg</attribute>
+<attribute Name="active">true</attribute>
+<attribute Name="female">false</attribute>
+<attribute Name="dontMoveMe">true</attribute>
+<attribute Name="unconscious">false</attribute>
+<attribute Name="location">Beach Camp</attribute>
+<attribute Name="spyingOn">Fate</attribute>
+<attribute Name="targetStage">nowhere</attribute>
+<attribute Name="occupiedUntil">0</attribute>
+<attribute Name="cBored">0</attribute>
+<attribute Name="howLongToSpy">0</attribute>
+<attribute Name="TalkingToJack">-0.9999</attribute>
+<attribute Name="TalkingToKate">-0.9999</attribute>
+<attribute Name="TalkingToLocke">-0.9999</attribute>
+<attribute Name="TalkingToSawyer">-0.9999</attribute>
+<attribute Name="TalkingToAnaLucia">-0.9999</attribute>
+<attribute Name="TalkingToHurley">-0.9999</attribute>
+</attributes>
+</actor>
+<actor Label="Ana Lucia">
+<attributes>
+<attribute Name="description"> </attribute>
+<attribute Name="image">image2689448086392070776.jpg</attribute>
+<attribute Name="active">true</attribute>
+<attribute Name="female">true</attribute>
+<attribute Name="dontMoveMe">true</attribute>
+<attribute Name="unconscious">false</attribute>
+<attribute Name="location">Beach Camp</attribute>
+<attribute Name="spyingOn">Fate</attribute>
+<attribute Name="targetStage">nowhere</attribute>
+<attribute Name="occupiedUntil">0</attribute>
+<attribute Name="cBored">0</attribute>
+<attribute Name="howLongToSpy">0</attribute>
+<attribute Name="TalkingToJack">-0.9999</attribute>
+<attribute Name="TalkingToKate">-0.9999</attribute>
+<attribute Name="TalkingToLocke">-0.9999</attribute>
+<attribute Name="TalkingToSawyer">-0.9999</attribute>
+<attribute Name="TalkingToAnaLucia">-0.9999</attribute>
+<attribute Name="TalkingToHurley">-0.9999</attribute>
+</attributes>
+</actor>
+<actor Label="Hurley">
+<attributes>
+<attribute Name="description"> </attribute>
+<attribute Name="image">image8136248985501630032.jpg</attribute>
+<attribute Name="active">true</attribute>
+<attribute Name="female">false</attribute>
+<attribute Name="dontMoveMe">false</attribute>
+<attribute Name="unconscious">false</attribute>
+<attribute Name="location">Beach Camp</attribute>
+<attribute Name="spyingOn">Fate</attribute>
+<attribute Name="targetStage">nowhere</attribute>
+<attribute Name="occupiedUntil">0</attribute>
+<attribute Name="cBored">0</attribute>
+<attribute Name="howLongToSpy">0</attribute>
+<attribute Name="TalkingToJack">-0.9999</attribute>
+<attribute Name="TalkingToKate">-0.9999</attribute>
+<attribute Name="TalkingToLocke">-0.9999</attribute>
+<attribute Name="TalkingToSawyer">-0.9999</attribute>
+<attribute Name="TalkingToAnaLucia">-0.9999</attribute>
+<attribute Name="TalkingToHurley">-0.9999</attribute>
+</attributes>
+</actor>
+<actor Label="Locke">
+<attributes>
+<attribute Name="description"> </attribute>
+<attribute Name="image">image2864038711630162763.jpg</attribute>
+<attribute Name="active">true</attribute>
+<attribute Name="female">true</attribute>
+<attribute Name="dontMoveMe">false</attribute>
+<attribute Name="unconscious">false</attribute>
+<attribute Name="location">Swan Station</attribute>
+<attribute Name="spyingOn">Fate</attribute>
+<attribute Name="targetStage">nowhere</attribute>
+<attribute Name="occupiedUntil">0</attribute>
+<attribute Name="cBored">0</attribute>
+<attribute Name="howLongToSpy">0</attribute>
+<attribute Name="TalkingToJack">-0.9999</attribute>
+<attribute Name="TalkingToKate">-0.9999</attribute>
+<attribute Name="TalkingToLocke">-0.9999</attribute>
+<attribute Name="TalkingToSawyer">-0.9999</attribute>
+<attribute Name="TalkingToAnaLucia">-0.9999</attribute>
+<attribute Name="TalkingToHurley">-0.9999</attribute>
+</attributes>
+</actor>
+</actorSet>
+<pValueSet>
+<pValues OfWhom="Fate"/>
+<pValues OfWhom="Jack"/>
+<pValues OfWhom="Kate"/>
+<pValues OfWhom="Sawyer"/>
+<pValues OfWhom="Ana Lucia"/>
+<pValues OfWhom="Hurley"/>
+<pValues OfWhom="Locke"/>
+</pValueSet>
+<propSet>
+<prop Label="BareProp">
+<description>a nothingburger Prop</description>
+<carried>false</carried>
+<visible>false</visible>
+<inPlay>true</inPlay>
+<owner>Jack</owner>
+<location>Beach Camp</location>
+</prop>
+</propSet>
+<stageSet>
+<stage Label="Beach Camp">
+<description/>
+<image>image8993130841314102119.jpg</image>
+<doorOpen>true</doorOpen>
+<population>0</population>
+<owner>Fate</owner>
+<xCoord>0.007194245</xCoord>
+<yCoord>-0.39695665</yCoord>
+</stage>
+<stage Label="Swan Station">
+<description> </description>
+<image>image3119730057605066433.jpg</image>
+<doorOpen>true</doorOpen>
+<population>0</population>
+<owner>Fate</owner>
+<xCoord>0.007194245</xCoord>
+<yCoord>-0.39948827</yCoord>
+</stage>
+<stage Label="Arrow Station">
+<description> </description>
+<image>image1198425260357012869.jpg</image>
+<doorOpen>true</doorOpen>
+<population>0</population>
+<owner>Fate</owner>
+<xCoord>0.007194245</xCoord>
+<yCoord>-0.39948827</yCoord>
+</stage>
+<stage Label="Golf Course">
+<description> </description>
+<image>image6888763410120522171.jpg</image>
+<doorOpen>true</doorOpen>
+<population>0</population>
+<owner>Fate</owner>
+<xCoord>0.007194245</xCoord>
+<yCoord>-0.39948827</yCoord>
+</stage>
+</stageSet>
+<customOperatorSet>
+<customOperator Label="AllActorsNotOnStage" Type="ActorGroup">
+<parameter Label="ActorReacting" Type="Actor"/>
+<body>
+<token Arg="" Label="Returned value">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="AND3">
+<token Arg="" Label="NOT">
+<Description>Are not the reacting actor</Description>
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="CandidateActor"/>
+<token Arg="0" Parameter="true"/>
+</token>
+</token>
+<token Arg="" Label="NOT">
+<Description>Are not in same location as reacting actor</Description>
+<token Arg="" Label="AreSameStage">
+<token Arg="" Label="ActorLocation">
+<token Arg="" Label="CandidateActor"/>
+</token>
+<token Arg="" Label="ActorLocation">
+<token Arg="0" Parameter="true"/>
+</token>
+</token>
+</token>
+<token Arg="" Label="NOT">
+<Description>Are not Nowhere</Description>
+<token Arg="" Label="AreSameStage">
+<token Arg="" Label="ActorLocation">
+<token Arg="" Label="CandidateActor"/>
+</token>
+<token Arg="nowhere" Label="StageConstant"/>
+</token>
+</token>
+</token>
+</token>
+</token>
+</body>
+</customOperator>
+<customOperator Label="AllActorsOnStage" Type="ActorGroup">
+<parameter Label="ActorReacting" Type="Actor"/>
+<body>
+<token Arg="" Label="Returned value">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="AND">
+<token Arg="" Label="NOT">
+<Description>Are not the reacting actor</Description>
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="CandidateActor"/>
+<token Arg="0" Parameter="true"/>
+</token>
+</token>
+<token Arg="" Label="AreSameStage">
+<Description>Are in the same location as reacting actor</Description>
+<token Arg="" Label="ActorLocation">
+<token Arg="0" Parameter="true"/>
+</token>
+<token Arg="" Label="ActorLocation">
+<token Arg="" Label="CandidateActor"/>
+</token>
+</token>
+</token>
+</token>
+</token>
+</body>
+</customOperator>
+<customOperator Label="AllUnoccupiedActorsOnStage" Type="ActorGroup">
+<parameter Label="ActorReacting" Type="Actor"/>
+<body>
+<token Arg="" Label="Returned value">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="AND3">
+<token Arg="" Label="NOT">
+<Description>Are not the reacting actor</Description>
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="CandidateActor"/>
+<token Arg="0" Parameter="true"/>
+</token>
+</token>
+<token Arg="" Label="AreSameStage">
+<Description>Are in the same location as reacting actor</Description>
+<token Arg="" Label="ActorLocation">
+<token Arg="0" Parameter="true"/>
+</token>
+<token Arg="" Label="ActorLocation">
+<token Arg="" Label="CandidateActor"/>
+</token>
+</token>
+<token Arg="" Label="AvailableForConversation">
+<token Arg="" Label="CandidateActor"/>
+</token>
+</token>
+</token>
+</token>
+</body>
+</customOperator>
+<customOperator Label="AvailableForConversation" Type="Boolean">
+<parameter Label="Actor" Type="Actor"/>
+<body>
+<token Arg="" Label="Returned value">
+<token Arg="" Label="AND">
+<token Arg="" Label="AND4">
+<token Arg="" Label="TopLessThanBottom(BNumber)">
+<token Arg="" Label="TalkingToJack">
+<token Arg="0" Parameter="true"/>
+</token>
+<token Arg="0.99" Label="BNumberConstant"/>
+</token>
+<token Arg="" Label="TopLessThanBottom(BNumber)">
+<token Arg="" Label="TalkingToKate">
+<token Arg="0" Parameter="true"/>
+</token>
+<token Arg="0.99" Label="BNumberConstant"/>
+</token>
+<token Arg="" Label="TopLessThanBottom(BNumber)">
+<token Arg="" Label="TalkingToLocke">
+<token Arg="0" Parameter="true"/>
+</token>
+<token Arg="0.99" Label="BNumberConstant"/>
+</token>
+<token Arg="" Label="TopLessThanBottom(BNumber)">
+<token Arg="" Label="TalkingToSawyer">
+<token Arg="0" Parameter="true"/>
+</token>
+<token Arg="0.99" Label="BNumberConstant"/>
+</token>
+</token>
+<token Arg="" Label="AND">
+<token Arg="" Label="TopLessThanBottom(BNumber)">
+<token Arg="" Label="TalkingToAnaLucia">
+<token Arg="0" Parameter="true"/>
+</token>
+<token Arg="0.99" Label="BNumberConstant"/>
+</token>
+<token Arg="" Label="TopLessThanBottom(BNumber)">
+<token Arg="" Label="TalkingToHurley">
+<token Arg="0" Parameter="true"/>
+</token>
+<token Arg="0.99" Label="BNumberConstant"/>
+</token>
+</token>
+</token>
+</token>
+</body>
+</customOperator>
+<customOperator Label="PartOfGreet" Type="Boolean">
+<parameter Label="Actor1" Type="Actor"/>
+<parameter Label="Actor2" Type="Actor"/>
+<parameter Label="greet-Subject" Type="Actor"/>
+<parameter Label="greet-DirObject" Type="Actor"/>
+<body>
+<token Arg="" Label="Returned value">
+<token Arg="" Label="OR">
+<token Arg="" Label="AND">
+<token Arg="" Label="AreSameActor">
+<token Arg="0" Parameter="true"/>
+<token Arg="2" Parameter="true"/>
+</token>
+<token Arg="" Label="AreSameActor">
+<token Arg="1" Parameter="true"/>
+<token Arg="3" Parameter="true"/>
+</token>
+</token>
+<token Arg="" Label="AND">
+<token Arg="" Label="AreSameActor">
+<token Arg="1" Parameter="true"/>
+<token Arg="2" Parameter="true"/>
+</token>
+<token Arg="" Label="AreSameActor">
+<token Arg="0" Parameter="true"/>
+<token Arg="3" Parameter="true"/>
+</token>
+</token>
+</token>
+</token>
+</body>
+</customOperator>
+<customOperator Label="ActorIsSubject" Type="Boolean">
+<parameter Label="Actor1" Type="Actor"/>
+<parameter Label="greet-Subject" Type="Actor"/>
+<body>
+<token Arg="" Label="Returned value">
+<token Arg="" Label="AreSameActor">
+<token Arg="0" Parameter="true"/>
+<token Arg="1" Parameter="true"/>
+</token>
+</token>
+</body>
+</customOperator>
+<customOperator Label="ActorIsDirObject" Type="Boolean">
+<parameter Label="Actor2" Type="Actor"/>
+<parameter Label="greet-DirObject" Type="Actor"/>
+<body>
+<token Arg="" Label="Returned value">
+<token Arg="" Label="AreSameActor">
+<token Arg="0" Parameter="true"/>
+<token Arg="1" Parameter="true"/>
+</token>
+</token>
+</body>
+</customOperator>
+<customOperator Label="SetResetConversation5a" Type="BNumber">
+<parameter Label="Actor1" Type="Actor"/>
+<parameter Label="Actor2" Type="Actor"/>
+<parameter Label="greet-Subject" Type="Actor"/>
+<parameter Label="greet-DirObject" Type="Actor"/>
+<parameter Label="TalkingToWho" Type="ActorTrait"/>
+<body>
+<token Arg="" Label="Returned value">
+<token Arg="" Label="PickUpperIf">
+<token Arg="" Label="PartOfGreet">
+<Description>Both actors are part of greet</Description>
+<token Arg="0" Parameter="true"/>
+<token Arg="1" Parameter="true"/>
+<token Arg="2" Parameter="true"/>
+<token Arg="3" Parameter="true"/>
+</token>
+<token Arg="0.99" Label="BNumberConstant"/>
+<token Arg="" Label="PickUpperIf">
+<token Arg="" Label="OR">
+<token Arg="" Label="AND">
+<token Arg="" Label="ActorIsPartOfGreet">
+<Description>Actor1 part of greet</Description>
+<token Arg="0" Parameter="true"/>
+<token Arg="2" Parameter="true"/>
+<token Arg="3" Parameter="true"/>
+</token>
+<token Arg="" Label="ActorIsNotPartOfGreet">
+<Description>Actor2 not part of greet</Description>
+<token Arg="1" Parameter="true"/>
+<token Arg="2" Parameter="true"/>
+<token Arg="3" Parameter="true"/>
+</token>
+</token>
+<token Arg="" Label="AND">
+<token Arg="" Label="ActorIsNotPartOfGreet">
+<Description>Actor1 not part of greet</Description>
+<token Arg="0" Parameter="true"/>
+<token Arg="2" Parameter="true"/>
+<token Arg="3" Parameter="true"/>
+</token>
+<token Arg="" Label="ActorIsPartOfGreet">
+<Description>Actor2 part of greet</Description>
+<token Arg="1" Parameter="true"/>
+<token Arg="2" Parameter="true"/>
+<token Arg="3" Parameter="true"/>
+</token>
+</token>
+</token>
+<token Arg="-0.99" Label="BNumberConstant"/>
+<token Arg="" Label="CorrespondingActorTrait">
+<token Arg="0" Parameter="true"/>
+<token Arg="4" Parameter="true"/>
+</token>
+</token>
+</token>
+</token>
+</body>
+</customOperator>
+<customOperator Label="OneActorOnStageAvailableForConversation" Type="Boolean">
+<body>
+<token Arg="" Label="Returned value">
+<token Arg="" Label="OR">
+<token Arg="" Label="OR3">
+<token Arg="" Label="AND">
+<token Arg="" Label="AreSameStage">
+<token Arg="" Label="ActorLocation">
+<token Arg="" Label="Protagonist"/>
+</token>
+<token Arg="" Label="ActorLocation">
+<token Arg="Kate" Label="ActorConstant"/>
+</token>
+</token>
+<token Arg="" Label="AvailableForConversation">
+<token Arg="Kate" Label="ActorConstant"/>
+</token>
+</token>
+<token Arg="" Label="AND">
+<token Arg="" Label="AreSameStage">
+<token Arg="" Label="ActorLocation">
+<token Arg="" Label="Protagonist"/>
+</token>
+<token Arg="" Label="ActorLocation">
+<token Arg="Sawyer" Label="ActorConstant"/>
+</token>
+</token>
+<token Arg="" Label="AvailableForConversation">
+<token Arg="Sawyer" Label="ActorConstant"/>
+</token>
+</token>
+<token Arg="" Label="AND">
+<token Arg="" Label="AreSameStage">
+<token Arg="" Label="ActorLocation">
+<token Arg="" Label="Protagonist"/>
+</token>
+<token Arg="" Label="ActorLocation">
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+</token>
+</token>
+<token Arg="" Label="AvailableForConversation">
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+</token>
+</token>
+</token>
+<token Arg="" Label="OR">
+<token Arg="" Label="AND">
+<token Arg="" Label="AreSameStage">
+<token Arg="" Label="ActorLocation">
+<token Arg="" Label="Protagonist"/>
+</token>
+<token Arg="" Label="ActorLocation">
+<token Arg="Hurley" Label="ActorConstant"/>
+</token>
+</token>
+<token Arg="" Label="AvailableForConversation">
+<token Arg="Hurley" Label="ActorConstant"/>
+</token>
+</token>
+<token Arg="" Label="AND">
+<token Arg="" Label="AreSameStage">
+<token Arg="" Label="ActorLocation">
+<token Arg="" Label="Protagonist"/>
+</token>
+<token Arg="" Label="ActorLocation">
+<token Arg="Locke" Label="ActorConstant"/>
+</token>
+</token>
+<token Arg="" Label="AvailableForConversation">
+<token Arg="Locke" Label="ActorConstant"/>
+</token>
+</token>
+</token>
+</token>
+</token>
+</body>
+</customOperator>
+<customOperator Label="MoreThanOneActorOnStage" Type="Boolean">
+<parameter Label="Stage" Type="Stage"/>
+<body>
+<token Arg="" Label="Returned value">
+<token Arg="" Label="TopGreaterThanBottom(Number)">
+<token Arg="" Label="ActorsOnStage">
+<token Arg="0" Parameter="true"/>
+</token>
+<token Arg="1.0" Label="NumberConstant"/>
+</token>
+</token>
+</body>
+</customOperator>
+<customOperator Label="ActorIsPartOfGreet" Type="Boolean">
+<parameter Label="Actor" Type="Actor"/>
+<parameter Label="greet-Subject" Type="Actor"/>
+<parameter Label="greet-DirObject" Type="Actor"/>
+<body>
+<token Arg="" Label="Returned value">
+<token Arg="" Label="OR">
+<token Arg="" Label="ActorIsSubject">
+<token Arg="0" Parameter="true"/>
+<token Arg="1" Parameter="true"/>
+</token>
+<token Arg="" Label="ActorIsDirObject">
+<token Arg="0" Parameter="true"/>
+<token Arg="2" Parameter="true"/>
+</token>
+</token>
+</token>
+</body>
+</customOperator>
+<customOperator Label="ActorIsNotPartOfGreet" Type="Boolean">
+<parameter Label="Actor" Type="Actor"/>
+<parameter Label="greet-Subject" Type="Actor"/>
+<parameter Label="greet-DirObject" Type="Actor"/>
+<body>
+<token Arg="" Label="Returned value">
+<token Arg="" Label="OR">
+<token Arg="" Label="NOT">
+<token Arg="" Label="ActorIsSubject">
+<token Arg="0" Parameter="true"/>
+<token Arg="1" Parameter="true"/>
+</token>
+</token>
+<token Arg="" Label="NOT">
+<token Arg="" Label="ActorIsDirObject">
+<token Arg="0" Parameter="true"/>
+<token Arg="2" Parameter="true"/>
+</token>
+</token>
+</token>
+</token>
+</body>
+</customOperator>
+</customOperatorSet>
+<optionSet>
+<option Label="what are you going to do?">
+<acceptable>
+<token Arg="" Label="OptionAcceptable">
+<token Arg="" Label="true"/>
+</token>
+</acceptable>
+<desirable>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</desirable>
+<socketSpecs Index="0">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="1">
+<script>
+<token Arg="" Label="AcceptableVerbs">
+<token Arg="" Label="AllVerbsWhich">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="2">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="Actor2Group">
+<token Arg="" Label="Protagonist"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+</option>
+<option Label="arrive at">
+<acceptable>
+<token Arg="" Label="OptionAcceptable">
+<token Arg="" Label="DoorOpen">
+<token Arg="" Label="This3Stage"/>
+</token>
+</token>
+</acceptable>
+<desirable>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</desirable>
+<socketSpecs Index="0">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="1">
+<script>
+<token Arg="" Label="AcceptableVerbs">
+<token Arg="" Label="AllVerbsWhich">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="2">
+<script>
+<token Arg="" Label="AcceptableStages">
+<token Arg="" Label="AllStagesWhich">
+<token Arg="" Label="AreSameStage">
+<token Arg="" Label="CandidateStage"/>
+<token Arg="" Label="This3Stage"/>
+</token>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.99" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="3">
+<script>
+<token Arg="" Label="AcceptableStages">
+<token Arg="" Label="AllStagesWhich">
+<token Arg="" Label="AreSameStage">
+<token Arg="" Label="CandidateStage"/>
+<token Arg="" Label="ThisLocation"/>
+</token>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+</option>
+<option Label="happily ever after">
+<acceptable>
+<token Arg="" Label="OptionAcceptable">
+<token Arg="" Label="true"/>
+</token>
+</acceptable>
+<desirable>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</desirable>
+<socketSpecs Index="0">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="1">
+<script>
+<token Arg="" Label="AcceptableVerbs">
+<token Arg="" Label="AllVerbsWhich">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="2">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="CandidateActor"/>
+<token Arg="" Label="ThisDirObject"/>
+</token>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="3">
+<script>
+<token Arg="" Label="AcceptableQuantifiers">
+<token Arg="" Label="AllQuantifiersWhich">
+<token Arg="" Label="NOT">
+<token Arg="" Label="QuantifierIsInterrogative">
+<token Arg="" Label="CandidateQuantifier"/>
+</token>
+</token>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="" Label="Suitability">
+<token Arg="" Label="CandidateQuantifier"/>
+<token Arg="" Label="Score"/>
+</token>
+</token>
+</script>
+</socketSpecs>
+</option>
+<option Label="greet">
+<acceptable>
+<token Arg="" Label="OptionAcceptable">
+<token Arg="" Label="AND">
+<token Arg="" Label="MoreThanOneActorOnStage">
+<token Arg="" Label="ThisLocation"/>
+</token>
+<token Arg="" Label="OneActorOnStageAvailableForConversation"/>
+</token>
+</token>
+</acceptable>
+<desirable>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</desirable>
+<socketSpecs Index="0">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="1">
+<script>
+<token Arg="" Label="AcceptableVerbs">
+<token Arg="" Label="AllVerbsWhich">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="2">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllUnoccupiedActorsOnStage">
+<token Arg="" Label="ReactingActor"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+</option>
+<option Label="wait">
+<acceptable>
+<token Arg="" Label="OptionAcceptable">
+<token Arg="" Label="true"/>
+</token>
+</acceptable>
+<desirable>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</desirable>
+<socketSpecs Index="0">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="1">
+<script>
+<token Arg="" Label="AcceptableVerbs">
+<token Arg="" Label="AllVerbsWhich">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+</option>
+<option Label="want to find">
+<acceptable>
+<token Arg="" Label="OptionAcceptable">
+<token Arg="" Label="true"/>
+</token>
+</acceptable>
+<desirable>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</desirable>
+<socketSpecs Index="0">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="1">
+<script>
+<token Arg="" Label="AcceptableVerbs">
+<token Arg="" Label="AllVerbsWhich">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="2">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsNotOnStage">
+<token Arg="" Label="ReactingActor"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+</option>
+<option Label="SetActorsInConversation">
+<acceptable>
+<token Arg="" Label="OptionAcceptable">
+<token Arg="" Label="true"/>
+</token>
+</acceptable>
+<desirable>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</desirable>
+<socketSpecs Index="0">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="1">
+<script>
+<token Arg="" Label="AcceptableVerbs">
+<token Arg="" Label="AllVerbsWhich">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="13">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="CandidateActor"/>
+<token Arg="Kate" Label="ActorConstant"/>
+</token>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="14">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="CandidateActor"/>
+<token Arg="Sawyer" Label="ActorConstant"/>
+</token>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+</option>
+<option Label="wait">
+<acceptable>
+<token Arg="" Label="OptionAcceptable">
+<token Arg="" Label="true"/>
+</token>
+</acceptable>
+<desirable>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</desirable>
+<socketSpecs Index="0">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="1">
+<script>
+<token Arg="" Label="AcceptableVerbs">
+<token Arg="" Label="AllVerbsWhich">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+</option>
+<option Label="SetActorsInConversation">
+<acceptable>
+<token Arg="" Label="OptionAcceptable">
+<token Arg="" Label="false"/>
+</token>
+</acceptable>
+<desirable>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</desirable>
+<socketSpecs Index="0">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="1">
+<script>
+<token Arg="" Label="AcceptableVerbs">
+<token Arg="" Label="AllVerbsWhich">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="13">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="CandidateActor"/>
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="14">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="CandidateActor"/>
+<token Arg="" Label="ThisDirObject"/>
+</token>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+</option>
+<option Label="greet">
+<acceptable>
+<token Arg="" Label="OptionAcceptable">
+<token Arg="" Label="AND">
+<token Arg="" Label="MoreThanOneActorOnStage">
+<token Arg="" Label="ThisLocation"/>
+</token>
+<token Arg="" Label="OneActorOnStageAvailableForConversation"/>
+</token>
+</token>
+</acceptable>
+<desirable>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</desirable>
+<socketSpecs Index="0">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="1">
+<script>
+<token Arg="" Label="AcceptableVerbs">
+<token Arg="" Label="AllVerbsWhich">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="2">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllUnoccupiedActorsOnStage">
+<token Arg="" Label="ReactingActor"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+</option>
+<option Label="wait">
+<acceptable>
+<token Arg="" Label="OptionAcceptable">
+<token Arg="" Label="true"/>
+</token>
+</acceptable>
+<desirable>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</desirable>
+<socketSpecs Index="0">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="1">
+<script>
+<token Arg="" Label="AcceptableVerbs">
+<token Arg="" Label="AllVerbsWhich">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+</option>
+<option Label="want to find">
+<acceptable>
+<token Arg="" Label="OptionAcceptable">
+<token Arg="" Label="true"/>
+</token>
+</acceptable>
+<desirable>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</desirable>
+<socketSpecs Index="0">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="1">
+<script>
+<token Arg="" Label="AcceptableVerbs">
+<token Arg="" Label="AllVerbsWhich">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="2">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsNotOnStage">
+<token Arg="" Label="ReactingActor"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+</option>
+<option Label="ResetActorConversation">
+<acceptable>
+<token Arg="" Label="OptionAcceptable">
+<token Arg="" Label="true"/>
+</token>
+</acceptable>
+<desirable>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</desirable>
+<socketSpecs Index="0">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="1">
+<script>
+<token Arg="" Label="AcceptableVerbs">
+<token Arg="" Label="AllVerbsWhich">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="13">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="CandidateActor"/>
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+</option>
+</optionSet>
+<roleSet>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="FatesRole"/>
+</token>
+</assumeRoleIf>
+<optionlink Index="0"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="Fate" Label="ActorConstant"/>
+</token>
+</token>
+</assumeRoleIf>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="Fate" Label="ActorConstant"/>
+</token>
+</token>
+</assumeRoleIf>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</assumeRoleIf>
+<optionlink Index="1"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AND">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="Fate" Label="ActorConstant"/>
+</token>
+<token Arg="" Label="PermitFateToReact"/>
+</token>
+</token>
+</assumeRoleIf>
+<optionlink Index="2"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="" Label="ThisDirObject"/>
+</token>
+</token>
+</assumeRoleIf>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="" Label="ThisDirObject"/>
+</token>
+</token>
+</assumeRoleIf>
+<optionlink Index="3"/>
+<optionlink Index="4"/>
+<optionlink Index="5"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="FatesRole"/>
+</token>
+</assumeRoleIf>
+<optionlink Index="6"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</assumeRoleIf>
+<optionlink Index="7"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="FatesRole"/>
+</token>
+</assumeRoleIf>
+<optionlink Index="8"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</assumeRoleIf>
+<optionlink Index="9"/>
+<optionlink Index="10"/>
+<optionlink Index="11"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="FatesRole"/>
+</token>
+</assumeRoleIf>
+<optionlink Index="12"/>
+</role>
+</roleSet>
+<categorySet>
+<category Label="System">
+<verb Label="once upon a time" Witnesses="NOBODY_AT_ALL">
+<description>The first Verb to execute in every storyworld</description>
+<hijackable>true</hijackable>
+<timeToPrepare>1</timeToPrepare>
+<timeToExecute>0</timeToExecute>
+<category>System</category>
+<expression>null</expression>
+<trivial_Momentous>0.0</trivial_Momentous>
+<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</script>
+</socket>
+<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="2" Notes="" Presence="REQUIRED" Type="DirObject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<script>
+<token Arg="" Label="SetScore">
+<token Arg="0.0" Label="BNumberConstant">
+<Description>initializes the score to 'medium'</Description>
+</token>
+</token>
+</script>
+<rolelink Index="0" Label="Fate"/>
+</verb>
+<verb Label="MeetingAlarm" Witnesses="ANYBODY_ON_STAGE">
+<description> </description>
+<hijackable>false</hijackable>
+<timeToPrepare>1</timeToPrepare>
+<timeToExecute>1</timeToExecute>
+<category>System</category>
+<expression>null</expression>
+<trivial_Momentous>-0.99</trivial_Momentous>
+<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</script>
+</socket>
+<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="2" Notes="" Presence="REQUIRED" Type="DirObject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="4" Notes="" Presence="REQUIRED" Type="Actor" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+</verb>
+<verb Label="PropAlarm" Witnesses="ANYBODY_ON_STAGE">
+<description> </description>
+<hijackable>false</hijackable>
+<timeToPrepare>1</timeToPrepare>
+<timeToExecute>1</timeToExecute>
+<category>System</category>
+<expression>null</expression>
+<trivial_Momentous>-0.99</trivial_Momentous>
+<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</script>
+</socket>
+<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="2" Notes="" Presence="REQUIRED" Type="DirObject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="3" Notes="" Presence="REQUIRED" Type="Prop" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<rolelink Index="1" Label="Fate"/>
+</verb>
+<verb Label="StageAlarm" Witnesses="ANYBODY_ON_STAGE">
+<description> </description>
+<hijackable>false</hijackable>
+<timeToPrepare>1</timeToPrepare>
+<timeToExecute>1</timeToExecute>
+<category>System</category>
+<expression>null</expression>
+<trivial_Momentous>-0.99</trivial_Momentous>
+<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</script>
+</socket>
+<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="2" Notes="" Presence="REQUIRED" Type="DirObject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="4" Notes="" Presence="REQUIRED" Type="Stage" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<rolelink Index="2" Label="Fate"/>
+</verb>
+<verb Label="ClockAlarm" Witnesses="SUBJECT_ONLY">
+<description>Fate will always be the Subject of this Verb. The DirObject is an Actor who need not be present. DirObject is just an extra bit of information that might be useful to the author in processing this Verb.</description>
+<hijackable>false</hijackable>
+<occupiesDirObject>false</occupiesDirObject>
+<timeToPrepare>1</timeToPrepare>
+<timeToExecute>1</timeToExecute>
+<category>System</category>
+<expression>null</expression>
+<trivial_Momentous>0.0</trivial_Momentous>
+<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</script>
+</socket>
+<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="2" Notes="the Actor for whom this is intended" Presence="NOT_REQUIRED" Type="DirObject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+</verb>
+<verb Label="do what?" Witnesses="ANYBODY_ON_STAGE">
+<description> </description>
+<hijackable>false</hijackable>
+<timeToPrepare>1</timeToPrepare>
+<timeToExecute>1</timeToExecute>
+<category>System</category>
+<expression>null</expression>
+<trivial_Momentous>0.0</trivial_Momentous>
+<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</script>
+</socket>
+<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="2" Notes="" Presence="REQUIRED" Type="DirObject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+</verb>
+<verb Label="depart for" Witnesses="ANYBODY_ON_STAGE">
+<description> </description>
+<hijackable>false</hijackable>
+<occupiesDirObject>false</occupiesDirObject>
+<timeToPrepare>1</timeToPrepare>
+<timeToExecute>1</timeToExecute>
+<category>System</category>
+<expression>determined</expression>
+<trivial_Momentous>0.0</trivial_Momentous>
+<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</script>
+</socket>
+<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="2" Notes="from" Presence="REQUIRED" Type="Stage" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="from" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="3" Notes="" Presence="REQUIRED" Type="Stage" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<rolelink Index="3" Label="TheSubject"/>
+</verb>
+<verb Label="arrive at" Witnesses="ANYBODY_ON_STAGE">
+<description> </description>
+<hijackable>false</hijackable>
+<occupiesDirObject>false</occupiesDirObject>
+<timeToPrepare>1</timeToPrepare>
+<timeToExecute>1</timeToExecute>
+<category>System</category>
+<expression>surpriseGood</expression>
+<trivial_Momentous>0.0</trivial_Momentous>
+<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</script>
+</socket>
+<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="2" Notes="from" Presence="REQUIRED" Type="Stage" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="from" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="3" Notes="" Presence="REQUIRED" Type="Stage" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+</verb>
+<verb Label="penultimate verb" Witnesses="ANYBODY_ON_STAGE">
+<description> </description>
+<hijackable>false</hijackable>
+<timeToPrepare>0</timeToPrepare>
+<timeToExecute>0</timeToExecute>
+<category>System</category>
+<expression>assent</expression>
+<trivial_Momentous>-0.99</trivial_Momentous>
+<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</script>
+</socket>
+<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="2" Notes="" Presence="REQUIRED" Type="DirObject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<rolelink Index="4" Label="Fate"/>
+</verb>
+<verb Label="happily ever after" Witnesses="ANYBODY_ON_STAGE">
+<description> </description>
+<hijackable>false</hijackable>
+<timeToPrepare>0</timeToPrepare>
+<timeToExecute>0</timeToExecute>
+<category>System</category>
+<expression>assent</expression>
+<trivial_Momentous>-0.99</trivial_Momentous>
+<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</script>
+</socket>
+<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="live" Label="TextConstant"/>
+</token>
+</script>
+</socket>
+<socket Index="2" Notes="" Presence="REQUIRED" Type="DirObject" Visible="false" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="3" Notes="" Presence="REQUIRED" Type="Quantifier" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="ever after." Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="CalculatedText11">
+<token Arg="in deepest despair" Label="TextConstant"/>
+<token Arg="miserably" Label="TextConstant"/>
+<token Arg="gloomily" Label="TextConstant"/>
+<token Arg="sadly" Label="TextConstant"/>
+<token Arg="uncomfortably" Label="TextConstant"/>
+<token Arg="adequately" Label="TextConstant"/>
+<token Arg="contentedly" Label="TextConstant"/>
+<token Arg="cheerfully" Label="TextConstant"/>
+<token Arg="happily" Label="TextConstant"/>
+<token Arg="joyously" Label="TextConstant"/>
+<token Arg="blissfully" Label="TextConstant"/>
+<token Arg="" Label="Quantifier2BNumber">
+<token Arg="" Label="This4Quantifier"/>
+</token>
+</token>
+</token>
+</script>
+</socket>
+<rolelink Index="5" Label="Player"/>
+</verb>
+</category>
+<category Label="Storyworld">
+<verb Label="what are you going to do?" Witnesses="EVERYBODY_EVERYWHERE">
+<hijackable>false</hijackable>
+<timeToPrepare>1</timeToPrepare>
+<timeToExecute>1</timeToExecute>
+<category>Storyworld</category>
+<expression>null</expression>
+<trivial_Momentous>0.0</trivial_Momentous>
+<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="ActorName">
+<token Arg="" Label="Protagonist"/>
+</token>
+</token>
+</script>
+</socket>
+<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="2" Notes="" Presence="REQUIRED" Type="DirObject" Visible="false" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<rolelink Index="6" Label="Protagonist"/>
+<rolelink Index="7" Label="Fate"/>
+</verb>
+</category>
+<category Label="Meet &amp; Greet">
+<verb Label="greet" Witnesses="ANYBODY_ON_STAGE">
+<hijackable>false</hijackable>
+<timeToPrepare>1</timeToPrepare>
+<timeToExecute>1</timeToExecute>
+<category>Meet &amp; Greet</category>
+<expression>null</expression>
+<trivial_Momentous>0.0</trivial_Momentous>
+<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</script>
+</socket>
+<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="2" Notes="" Presence="REQUIRED" Type="DirObject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<script>
+<token Arg="" Label="FillGlobalBNumberBox">
+<token Arg="" Label="TalkingToKate">
+<token Arg="Sawyer" Label="ActorConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToKate">
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="" Label="ThisSubject"/>
+<token Arg="" Label="ThisDirObject"/>
+<token Arg="TalkingToKate" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToSawyer">
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="" Label="ThisSubject"/>
+<token Arg="" Label="ThisDirObject"/>
+<token Arg="TalkingToSawyer" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToAnaLucia">
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+<token Arg="" Label="ThisSubject"/>
+<token Arg="" Label="ThisDirObject"/>
+<token Arg="TalkingToAnaLucia" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToHurley">
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="Hurley" Label="ActorConstant"/>
+<token Arg="" Label="ThisSubject"/>
+<token Arg="" Label="ThisDirObject"/>
+<token Arg="TalkingToHurley" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToJack">
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="ThisSubject"/>
+<token Arg="" Label="ThisDirObject"/>
+<token Arg="TalkingToJack" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToJack">
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="ThisSubject"/>
+<token Arg="" Label="ThisDirObject"/>
+<token Arg="TalkingToJack" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToJack">
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="ThisSubject"/>
+<token Arg="" Label="ThisDirObject"/>
+<token Arg="TalkingToJack" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToJack">
+<token Arg="Hurley" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Hurley" Label="ActorConstant"/>
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="ThisSubject"/>
+<token Arg="" Label="ThisDirObject"/>
+<token Arg="TalkingToJack" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToSawyer">
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="" Label="ThisSubject"/>
+<token Arg="" Label="ThisDirObject"/>
+<token Arg="TalkingToSawyer" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToKate">
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="" Label="ThisSubject"/>
+<token Arg="" Label="ThisDirObject"/>
+<token Arg="TalkingToKate" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToLocke">
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="Locke" Label="ActorConstant"/>
+<token Arg="" Label="ThisSubject"/>
+<token Arg="" Label="ThisDirObject"/>
+<token Arg="TalkingToLocke" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToJack">
+<token Arg="Locke" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Locke" Label="ActorConstant"/>
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="ThisSubject"/>
+<token Arg="" Label="ThisDirObject"/>
+<token Arg="TalkingToJack" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="FillGlobalBNumberBox">
+<token Arg="" Label="TalkingToKate">
+<token Arg="Sawyer" Label="ActorConstant"/>
+</token>
+</token>
+</script>
+<rolelink Index="8" Label="ThisSubject"/>
+<rolelink Index="9" Label="Fate"/>
+</verb>
+<verb Label="wait" Witnesses="ANYBODY_ON_STAGE">
+<hijackable>false</hijackable>
+<timeToPrepare>1</timeToPrepare>
+<timeToExecute>1</timeToExecute>
+<category>Meet &amp; Greet</category>
+<expression>null</expression>
+<trivial_Momentous>0.0</trivial_Momentous>
+<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</script>
+</socket>
+<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<rolelink Index="10" Label="ThisSubject"/>
+</verb>
+<verb Label="want to find" Witnesses="EVERYBODY_EVERYWHERE">
+<hijackable>false</hijackable>
+<occupiesDirObject>false</occupiesDirObject>
+<timeToPrepare>1</timeToPrepare>
+<timeToExecute>1</timeToExecute>
+<category>Meet &amp; Greet</category>
+<expression>null</expression>
+<trivial_Momentous>0.0</trivial_Momentous>
+<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</script>
+</socket>
+<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="2" Notes="" Presence="REQUIRED" Type="DirObject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<rolelink Index="8" Label="ThisSubject"/>
+<rolelink Index="11" Label="Fate"/>
+</verb>
+</category>
+<category Label="Fate">
+<verb Label="ResetActorConversation" Witnesses="EVERYBODY_EVERYWHERE">
+<hijackable>false</hijackable>
+<occupiesDirObject>false</occupiesDirObject>
+<timeToPrepare>1</timeToPrepare>
+<timeToExecute>1</timeToExecute>
+<category>Fate</category>
+<expression>null</expression>
+<trivial_Momentous>0.0</trivial_Momentous>
+<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</script>
+</socket>
+<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="13" Notes="want to find-Subject" Presence="REQUIRED" Type="Actor" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<script>
+<token Arg="" Label="SetTalkingToKate">
+<token Arg="" Label="This14Actor"/>
+<token Arg="-0.99" Label="BNumberConstant"/>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToSawyer">
+<token Arg="" Label="This14Actor"/>
+<token Arg="-0.99" Label="BNumberConstant"/>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToAnaLucia">
+<token Arg="" Label="This14Actor"/>
+<token Arg="-0.99" Label="BNumberConstant"/>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToHurley">
+<token Arg="" Label="This14Actor"/>
+<token Arg="-0.99" Label="BNumberConstant"/>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToLocke">
+<token Arg="" Label="This14Actor"/>
+<token Arg="-0.99" Label="BNumberConstant"/>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToJack">
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="-0.99" Label="BNumberConstant"/>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToJack">
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="-0.99" Label="BNumberConstant"/>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToJack">
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+<token Arg="-0.99" Label="BNumberConstant"/>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToJack">
+<token Arg="Hurley" Label="ActorConstant"/>
+<token Arg="-0.99" Label="BNumberConstant"/>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToJack">
+<token Arg="Locke" Label="ActorConstant"/>
+<token Arg="-0.99" Label="BNumberConstant"/>
+</token>
+</script>
+</verb>
+<verb Label="SetActorsInConversation" Witnesses="EVERYBODY_EVERYWHERE">
+<hijackable>false</hijackable>
+<occupiesDirObject>false</occupiesDirObject>
+<timeToPrepare>1</timeToPrepare>
+<timeToExecute>1</timeToExecute>
+<category>Fate</category>
+<expression>null</expression>
+<trivial_Momentous>0.0</trivial_Momentous>
+<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</script>
+</socket>
+<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="13" Notes="greet ThisSubject" Presence="REQUIRED" Type="Actor" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<socket Index="14" Notes="greet ThisDirObject" Presence="REQUIRED" Type="Actor" Visible="true" Witness="true">
+<suffix>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TextConstant"/>
+</token>
+</suffix>
+<script>
+<token Arg="" Label="WordsocketText">
+<token Arg="" Label="TheName"/>
+</token>
+</script>
+</socket>
+<script>
+<token Arg="" Label="SetTalkingToKate">
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToKate" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToSawyer">
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToSawyer" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToAnaLucia">
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToAnaLucia" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToHurley">
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="Hurley" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToHurley" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToJack">
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToJack" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToSawyer">
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToSawyer" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToAnaLucia">
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToAnaLucia" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToHurley">
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="Hurley" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToHurley" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToJack">
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToJack" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToKate">
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToKate" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToAnaLucia">
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToAnaLucia" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToHurley">
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="Hurley" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToHurley" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToJack">
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToJack" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToKate">
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToKate" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToSawyer">
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToSawyer" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToHurley">
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+<token Arg="Hurley" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToHurley" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToJack">
+<token Arg="Hurley" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Hurley" Label="ActorConstant"/>
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToJack" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToKate">
+<token Arg="Hurley" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Hurley" Label="ActorConstant"/>
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToKate" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToSawyer">
+<token Arg="Hurley" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Hurley" Label="ActorConstant"/>
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToSawyer" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToAnaLucia">
+<token Arg="Hurley" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Hurley" Label="ActorConstant"/>
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToAnaLucia" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToLocke">
+<token Arg="Locke" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Locke" Label="ActorConstant"/>
+<token Arg="Jack" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToJack" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToLocke">
+<token Arg="Locke" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Locke" Label="ActorConstant"/>
+<token Arg="Kate" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToKate" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToLocke">
+<token Arg="Locke" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Locke" Label="ActorConstant"/>
+<token Arg="Sawyer" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToSawyer" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToLocke">
+<token Arg="Locke" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Locke" Label="ActorConstant"/>
+<token Arg="Ana Lucia" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToAnaLucia" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="SetTalkingToLocke">
+<token Arg="Locke" Label="ActorConstant"/>
+<token Arg="" Label="SetResetConversation5a">
+<token Arg="Locke" Label="ActorConstant"/>
+<token Arg="Hurley" Label="ActorConstant"/>
+<token Arg="" Label="This14Actor"/>
+<token Arg="" Label="This15Actor"/>
+<token Arg="TalkingToHurley" Label="ActorTraitConstant"/>
+</token>
+</token>
+</script>
+</verb>
+</category>
+</categorySet>
+</dictionary>
