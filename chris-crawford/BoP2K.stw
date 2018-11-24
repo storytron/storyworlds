@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="3378" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
-<dictionaryVersion Label="0.937"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="3382" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionaryVersion Label="0.939"/>
 <copyright>Balance of Power: 21st Century
 Image License Information
 
@@ -52,9 +52,9 @@ World Map	image by U.S. Geological Survey, Department of the Interior/USGS	This 
 
 
 </copyright>
-<startingVerb Label="waits"/>
-<startingRole Label="Policymaker"/>
-<startingOption Label="ask"/>
+<startingVerb Label="clout change"/>
+<startingRole Label="Fate"/>
+<startingOption Label="penultimate verb"/>
 <propTraits>
 <attribute Label="WorkingOn"/>
 <attribute Label="Done"/>
@@ -7849,7 +7849,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <Description>he's not me</Description>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="CandidateActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="NOT">
@@ -10003,46 +10003,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </script>
 </socketSpecs>
 </option>
-<option Label="OK">
-<acceptable>
-<token Arg="" Label="OptionAcceptable">
-<token Arg="" Label="true"/>
-</token>
-</acceptable>
-<desirable>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</desirable>
-<socketSpecs Index="0">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="1">
-<script>
-<token Arg="" Label="AcceptableVerbs">
-<token Arg="" Label="AllVerbsWhich">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-</option>
 <option Label="pick a censure mover">
 <acceptable>
 <token Arg="" Label="OptionAcceptable">
@@ -10110,7 +10070,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="CandidateActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -10142,48 +10102,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="AcceptableActors">
 <token Arg="" Label="Actor2Group">
 <token Arg="" Label="ThisSubject"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-</option>
-<option Label="OK">
-<acceptable>
-<token Arg="" Label="OptionAcceptable">
-<token Arg="" Label="true"/>
-</token>
-</acceptable>
-<desirable>
-<token Arg="" Label="Desirable">
-<token Arg="0.1" Label="BNumberConstant">
-<Description>greater than zero to block don't cares</Description>
-</token>
-</token>
-</desirable>
-<socketSpecs Index="0">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="1">
-<script>
-<token Arg="" Label="AcceptableVerbs">
-<token Arg="" Label="AllVerbsWhich">
-<token Arg="" Label="true"/>
 </token>
 </token>
 </script>
@@ -11394,7 +11312,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <Description>he's not me</Description>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="CandidateActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="NOT">
@@ -13370,46 +13288,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="AcceptableProps">
 <token Arg="" Label="Prop2Group">
 <token Arg="" Label="This15Prop"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-</option>
-<option Label="OK">
-<acceptable>
-<token Arg="" Label="OptionAcceptable">
-<token Arg="" Label="true"/>
-</token>
-</acceptable>
-<desirable>
-<token Arg="" Label="Desirable">
-<token Arg="0.1" Label="BNumberConstant"/>
-</token>
-</desirable>
-<socketSpecs Index="0">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="1">
-<script>
-<token Arg="" Label="AcceptableVerbs">
-<token Arg="" Label="AllVerbsWhich">
-<token Arg="" Label="true"/>
 </token>
 </token>
 </script>
@@ -24015,46 +23893,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </script>
 </socketSpecs>
 </option>
-<option Label="OK">
-<acceptable>
-<token Arg="" Label="OptionAcceptable">
-<token Arg="" Label="true"/>
-</token>
-</acceptable>
-<desirable>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</desirable>
-<socketSpecs Index="0">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="1">
-<script>
-<token Arg="" Label="AcceptableVerbs">
-<token Arg="" Label="AllVerbsWhich">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-</option>
 <option Label="consider taking the initiative">
 <acceptable>
 <token Arg="" Label="OptionAcceptable">
@@ -25067,46 +24905,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="AcceptableProps">
 <token Arg="" Label="Prop2Group">
 <token Arg="" Label="Chosen3Prop"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-</option>
-<option Label="OK">
-<acceptable>
-<token Arg="" Label="OptionAcceptable">
-<token Arg="" Label="true"/>
-</token>
-</acceptable>
-<desirable>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</desirable>
-<socketSpecs Index="0">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="1">
-<script>
-<token Arg="" Label="AcceptableVerbs">
-<token Arg="" Label="AllVerbsWhich">
-<token Arg="" Label="true"/>
 </token>
 </token>
 </script>
@@ -26299,46 +26097,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </script>
 </socketSpecs>
 </option>
-<option Label="OK">
-<acceptable>
-<token Arg="" Label="OptionAcceptable">
-<token Arg="" Label="true"/>
-</token>
-</acceptable>
-<desirable>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</desirable>
-<socketSpecs Index="0">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="1">
-<script>
-<token Arg="" Label="AcceptableVerbs">
-<token Arg="" Label="AllVerbsWhich">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-</option>
 <option Label="denounce">
 <acceptable>
 <token Arg="" Label="OptionAcceptable">
@@ -27158,46 +26916,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </script>
 </socketSpecs>
 </option>
-<option Label="OK">
-<acceptable>
-<token Arg="" Label="OptionAcceptable">
-<token Arg="" Label="true"/>
-</token>
-</acceptable>
-<desirable>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</desirable>
-<socketSpecs Index="0">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="1">
-<script>
-<token Arg="" Label="AcceptableVerbs">
-<token Arg="" Label="AllVerbsWhich">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-</option>
 <option Label="pick a censure mover">
 <acceptable>
 <token Arg="" Label="OptionAcceptable">
@@ -27266,7 +26984,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="CandidateActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -27293,46 +27011,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="AcceptableActors">
 <token Arg="" Label="Actor2Group">
 <token Arg="" Label="ThisSubject"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-</option>
-<option Label="OK">
-<acceptable>
-<token Arg="" Label="OptionAcceptable">
-<token Arg="" Label="true"/>
-</token>
-</acceptable>
-<desirable>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</desirable>
-<socketSpecs Index="0">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="1">
-<script>
-<token Arg="" Label="AcceptableVerbs">
-<token Arg="" Label="AllVerbsWhich">
-<token Arg="" Label="true"/>
 </token>
 </token>
 </script>
@@ -28111,46 +27789,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </script>
 </socketSpecs>
 </option>
-<option Label="OK">
-<acceptable>
-<token Arg="" Label="OptionAcceptable">
-<token Arg="" Label="true"/>
-</token>
-</acceptable>
-<desirable>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</desirable>
-<socketSpecs Index="0">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="1">
-<script>
-<token Arg="" Label="AcceptableVerbs">
-<token Arg="" Label="AllVerbsWhich">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-</option>
 <option Label="denounce">
 <acceptable>
 <token Arg="" Label="OptionAcceptable">
@@ -28548,46 +28186,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </script>
 </socketSpecs>
 </option>
-<option Label="OK">
-<acceptable>
-<token Arg="" Label="OptionAcceptable">
-<token Arg="" Label="true"/>
-</token>
-</acceptable>
-<desirable>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</desirable>
-<socketSpecs Index="0">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="1">
-<script>
-<token Arg="" Label="AcceptableVerbs">
-<token Arg="" Label="AllVerbsWhich">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-</option>
 <option Label="pick a censure mover">
 <acceptable>
 <token Arg="" Label="OptionAcceptable">
@@ -28656,7 +28254,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="CandidateActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="IHaventDoneThisSince">
@@ -28686,46 +28284,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="AcceptableActors">
 <token Arg="" Label="Actor2Group">
 <token Arg="" Label="ThisSubject"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-</option>
-<option Label="OK">
-<acceptable>
-<token Arg="" Label="OptionAcceptable">
-<token Arg="" Label="true"/>
-</token>
-</acceptable>
-<desirable>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</desirable>
-<socketSpecs Index="0">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="1">
-<script>
-<token Arg="" Label="AcceptableVerbs">
-<token Arg="" Label="AllVerbsWhich">
-<token Arg="" Label="true"/>
 </token>
 </token>
 </script>
@@ -31448,12 +31006,12 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="0.0" Label="BNumberConstant"/>
 </token>
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 <token Arg="" Label="BInverse">
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 </token>
@@ -32047,7 +31605,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="TopGreaterThanBottom(BNumber)">
 <Description>is it desirable to the USA?</Description>
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 <token Arg="0.0" Label="BNumberConstant"/>
@@ -32063,7 +31621,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="TopLessThanBottom(BNumber)">
 <Description>is it undesirable to the USA?</Description>
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 <token Arg="0.0" Label="BNumberConstant"/>
@@ -32180,7 +31738,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="TopGreaterThanBottom(BNumber)">
 <Description>is it desirable to the USA?</Description>
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 <token Arg="0.0" Label="BNumberConstant"/>
@@ -32196,7 +31754,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="TopLessThanBottom(BNumber)">
 <Description>is it undesirable to the USA?</Description>
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 <token Arg="0.0" Label="BNumberConstant"/>
@@ -32339,7 +31897,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 <token Arg="" Label="TopGreaterThanBottom(BNumber)">
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 <token Arg="0.0" Label="BNumberConstant"/>
@@ -32351,7 +31909,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <script>
 <token Arg="" Label="Desirable">
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 </token>
@@ -32410,7 +31968,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 <token Arg="" Label="TopLessThanBottom(BNumber)">
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 <token Arg="0.0" Label="BNumberConstant"/>
@@ -32423,7 +31981,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="Desirable">
 <token Arg="" Label="BInverse">
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 </token>
@@ -32507,7 +32065,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 <token Arg="" Label="TopGreaterThanBottom(BNumber)">
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 <token Arg="0.0" Label="BNumberConstant"/>
@@ -32519,7 +32077,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <script>
 <token Arg="" Label="Desirable">
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 </token>
@@ -32578,7 +32136,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 <token Arg="" Label="TopLessThanBottom(BNumber)">
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 <token Arg="0.0" Label="BNumberConstant"/>
@@ -32591,7 +32149,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="Desirable">
 <token Arg="" Label="BInverse">
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 </token>
@@ -32619,7 +32177,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 <token Arg="" Label="TopLessThanBottom(BNumber)">
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 <token Arg="0.0" Label="BNumberConstant"/>
@@ -32778,7 +32336,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 <token Arg="" Label="TopLessThanBottom(BNumber)">
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 <token Arg="0.0" Label="BNumberConstant"/>
@@ -32791,7 +32349,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="Desirable">
 <token Arg="" Label="BInverse">
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 </token>
@@ -32825,7 +32383,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="TopGreaterThanBottom(BNumber)">
 <Description>is it desirable to the USA?</Description>
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 <token Arg="0.0" Label="BNumberConstant"/>
@@ -32841,7 +32399,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="TopLessThanBottom(BNumber)">
 <Description>is it undesirable to the USA?</Description>
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 <token Arg="0.0" Label="BNumberConstant"/>
@@ -32984,7 +32542,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 <token Arg="" Label="TopLessThanBottom(BNumber)">
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 <token Arg="0.0" Label="BNumberConstant"/>
@@ -32997,7 +32555,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="Desirable">
 <token Arg="" Label="BInverse">
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 </token>
@@ -33121,7 +32679,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 <token Arg="" Label="TopLessThanBottom(BNumber)">
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 <token Arg="0.0" Label="BNumberConstant"/>
@@ -33134,7 +32692,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="Desirable">
 <token Arg="" Label="BInverse">
 <token Arg="" Label="PUndesirable_Desirable">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="CandidateProp"/>
 </token>
 </token>
@@ -33225,7 +32783,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <script>
 <token Arg="" Label="AcceptableActors">
 <token Arg="" Label="Actor2Group">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 </script>
@@ -33423,46 +32981,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="AcceptableProps">
 <token Arg="" Label="Prop2Group">
 <token Arg="" Label="Chosen3Prop"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-</option>
-<option Label="OK">
-<acceptable>
-<token Arg="" Label="OptionAcceptable">
-<token Arg="" Label="true"/>
-</token>
-</acceptable>
-<desirable>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</desirable>
-<socketSpecs Index="0">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="1">
-<script>
-<token Arg="" Label="AcceptableVerbs">
-<token Arg="" Label="AllVerbsWhich">
-<token Arg="" Label="true"/>
 </token>
 </token>
 </script>
@@ -33831,7 +33349,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </script>
-<optionlink Index="19"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -33892,8 +33409,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="20"/>
-<optionlink Index="21"/>
+<optionlink Index="19"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -33910,7 +33426,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="22"/>
+<optionlink Index="20"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -33935,7 +33451,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="23"/>
+<optionlink Index="21"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34034,8 +33550,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </script>
-<optionlink Index="24"/>
-<optionlink Index="25"/>
+<optionlink Index="22"/>
+<optionlink Index="23"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34111,8 +33627,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="26"/>
-<optionlink Index="27"/>
+<optionlink Index="24"/>
+<optionlink Index="25"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34156,7 +33672,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="28"/>
+<optionlink Index="26"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34164,7 +33680,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="29"/>
+<optionlink Index="27"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34175,6 +33691,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
+<optionlink Index="28"/>
+<optionlink Index="29"/>
 <optionlink Index="30"/>
 <optionlink Index="31"/>
 <optionlink Index="32"/>
@@ -34188,8 +33706,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <optionlink Index="40"/>
 <optionlink Index="41"/>
 <optionlink Index="42"/>
-<optionlink Index="43"/>
-<optionlink Index="44"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34222,7 +33738,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </script>
-<optionlink Index="45"/>
+<optionlink Index="43"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34283,7 +33799,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </script>
-<optionlink Index="46"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34357,7 +33872,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="47"/>
+<optionlink Index="44"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34368,7 +33883,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="48"/>
+<optionlink Index="45"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34379,7 +33894,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="49"/>
+<optionlink Index="46"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34390,7 +33905,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="50"/>
+<optionlink Index="47"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34401,7 +33916,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="51"/>
+<optionlink Index="48"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34412,7 +33927,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="52"/>
+<optionlink Index="49"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34423,7 +33938,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="53"/>
+<optionlink Index="50"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34434,7 +33949,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="54"/>
+<optionlink Index="51"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34445,7 +33960,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="55"/>
+<optionlink Index="52"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34456,7 +33971,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="56"/>
+<optionlink Index="53"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34467,7 +33982,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="57"/>
+<optionlink Index="54"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34478,43 +33993,43 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
+<optionlink Index="55"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="USA" Label="ActorConstant"/>
+</token>
+</token>
+</assumeRoleIf>
+<optionlink Index="56"/>
+<optionlink Index="57"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="" Label="ThisDirObject"/>
+</token>
+</token>
+</assumeRoleIf>
 <optionlink Index="58"/>
-</role>
-<role>
-<assumeRoleIf>
-<token Arg="" Label="AssumeRoleIf">
-<token Arg="" Label="AreSameActor">
-<token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
-</token>
-</token>
-</assumeRoleIf>
 <optionlink Index="59"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="" Label="ThisDirObject"/>
+</token>
+</token>
+</assumeRoleIf>
 <optionlink Index="60"/>
-</role>
-<role>
-<assumeRoleIf>
-<token Arg="" Label="AssumeRoleIf">
-<token Arg="" Label="AreSameActor">
-<token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="ThisDirObject"/>
-</token>
-</token>
-</assumeRoleIf>
 <optionlink Index="61"/>
-<optionlink Index="62"/>
-</role>
-<role>
-<assumeRoleIf>
-<token Arg="" Label="AssumeRoleIf">
-<token Arg="" Label="AreSameActor">
-<token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="ThisDirObject"/>
-</token>
-</token>
-</assumeRoleIf>
-<optionlink Index="63"/>
-<optionlink Index="64"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34577,8 +34092,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </script>
-<optionlink Index="65"/>
-<optionlink Index="66"/>
+<optionlink Index="62"/>
+<optionlink Index="63"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34604,7 +34119,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </script>
-<optionlink Index="67"/>
+<optionlink Index="64"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34615,9 +34130,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="68"/>
-<optionlink Index="69"/>
-<optionlink Index="70"/>
+<optionlink Index="65"/>
+<optionlink Index="66"/>
+<optionlink Index="67"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34639,9 +34154,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </script>
-<optionlink Index="71"/>
-<optionlink Index="72"/>
-<optionlink Index="73"/>
+<optionlink Index="68"/>
+<optionlink Index="69"/>
+<optionlink Index="70"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34649,7 +34164,45 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
+<optionlink Index="71"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</assumeRoleIf>
+<optionlink Index="72"/>
+<optionlink Index="73"/>
 <optionlink Index="74"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="" Label="ThisDirObject"/>
+</token>
+</token>
+</assumeRoleIf>
+<script>
+<token Arg="" Label="AdjustPActorTrait">
+<token Arg="Clout" Label="ActorTraitConstant"/>
+<token Arg="" Label="ThisSubject"/>
+<token Arg="" Label="BInverse">
+<token Arg="" Label="Blend">
+<token Arg="0.0" Label="BNumberConstant"/>
+<token Arg="" Label="Quantifier2BNumber">
+<token Arg="" Label="This4Quantifier"/>
+</token>
+<token Arg="0.5" Label="BNumberConstant"/>
+</token>
+</token>
+</token>
+</script>
 </role>
 <role>
 <assumeRoleIf>
@@ -34694,6 +34247,16 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="AssumeRoleIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
+<token Arg="" Label="ThisDirObject"/>
+</token>
+</token>
+</assumeRoleIf>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
 <token Arg="" Label="ThisSubject"/>
 </token>
 </token>
@@ -34701,41 +34264,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <optionlink Index="78"/>
 <optionlink Index="79"/>
 <optionlink Index="80"/>
-</role>
-<role>
-<assumeRoleIf>
-<token Arg="" Label="AssumeRoleIf">
-<token Arg="" Label="AreSameActor">
-<token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="ThisDirObject"/>
-</token>
-</token>
-</assumeRoleIf>
-<script>
-<token Arg="" Label="AdjustPActorTrait">
-<token Arg="Clout" Label="ActorTraitConstant"/>
-<token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="BInverse">
-<token Arg="" Label="Blend">
-<token Arg="0.0" Label="BNumberConstant"/>
-<token Arg="" Label="Quantifier2BNumber">
-<token Arg="" Label="This4Quantifier"/>
-</token>
-<token Arg="0.5" Label="BNumberConstant"/>
-</token>
-</token>
-</token>
-</script>
-</role>
-<role>
-<assumeRoleIf>
-<token Arg="" Label="AssumeRoleIf">
-<token Arg="" Label="AreSameActor">
-<token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="ThisDirObject"/>
-</token>
-</token>
-</assumeRoleIf>
 </role>
 <role>
 <assumeRoleIf>
@@ -34755,19 +34283,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="AssumeRoleIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="ThisSubject"/>
-</token>
-</token>
-</assumeRoleIf>
-<optionlink Index="84"/>
-<optionlink Index="85"/>
-<optionlink Index="86"/>
-</role>
-<role>
-<assumeRoleIf>
-<token Arg="" Label="AssumeRoleIf">
-<token Arg="" Label="AreSameActor">
-<token Arg="" Label="ReactingActor"/>
 <token Arg="" Label="ThisDirObject"/>
 </token>
 </token>
@@ -34779,8 +34294,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="87"/>
-<optionlink Index="88"/>
+<optionlink Index="84"/>
+<optionlink Index="85"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34813,8 +34328,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </script>
-<optionlink Index="89"/>
-<optionlink Index="90"/>
+<optionlink Index="86"/>
+<optionlink Index="87"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34822,7 +34337,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="91"/>
+<optionlink Index="88"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34833,7 +34348,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="92"/>
+<optionlink Index="89"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34935,8 +34450,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="93"/>
-<optionlink Index="94"/>
+<optionlink Index="90"/>
+<optionlink Index="91"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -34983,7 +34498,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="95"/>
+<optionlink Index="92"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35071,7 +34586,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="96"/>
+<optionlink Index="93"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35085,7 +34600,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="97"/>
+<optionlink Index="94"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35096,9 +34611,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="98"/>
-<optionlink Index="99"/>
-<optionlink Index="100"/>
+<optionlink Index="95"/>
+<optionlink Index="96"/>
+<optionlink Index="97"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35116,9 +34631,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="-0.2" Label="BNumberConstant"/>
 </token>
 </script>
-<optionlink Index="101"/>
-<optionlink Index="102"/>
-<optionlink Index="103"/>
+<optionlink Index="98"/>
+<optionlink Index="99"/>
+<optionlink Index="100"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35126,7 +34641,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="104"/>
+<optionlink Index="101"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35137,7 +34652,45 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
+<optionlink Index="102"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</assumeRoleIf>
+<optionlink Index="103"/>
+<optionlink Index="104"/>
 <optionlink Index="105"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="" Label="ThisDirObject"/>
+</token>
+</token>
+</assumeRoleIf>
+<script>
+<token Arg="" Label="AdjustPActorTrait">
+<token Arg="Clout" Label="ActorTraitConstant"/>
+<token Arg="" Label="ThisSubject"/>
+<token Arg="" Label="BInverse">
+<token Arg="" Label="Blend">
+<token Arg="0.0" Label="BNumberConstant"/>
+<token Arg="" Label="Quantifier2BNumber">
+<token Arg="" Label="This4Quantifier"/>
+</token>
+<token Arg="0.7" Label="BNumberConstant"/>
+</token>
+</token>
+</token>
+</script>
 </role>
 <role>
 <assumeRoleIf>
@@ -35195,31 +34748,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="AssumeRoleIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="ThisDirObject"/>
-</token>
-</token>
-</assumeRoleIf>
-<script>
-<token Arg="" Label="AdjustPActorTrait">
-<token Arg="Clout" Label="ActorTraitConstant"/>
-<token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="BInverse">
-<token Arg="" Label="Blend">
-<token Arg="0.0" Label="BNumberConstant"/>
-<token Arg="" Label="Quantifier2BNumber">
-<token Arg="" Label="This4Quantifier"/>
-</token>
-<token Arg="0.7" Label="BNumberConstant"/>
-</token>
-</token>
-</token>
-</script>
-</role>
-<role>
-<assumeRoleIf>
-<token Arg="" Label="AssumeRoleIf">
-<token Arg="" Label="AreSameActor">
-<token Arg="" Label="ReactingActor"/>
 <token Arg="" Label="ThisSubject"/>
 </token>
 </token>
@@ -35227,19 +34755,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <optionlink Index="112"/>
 <optionlink Index="113"/>
 <optionlink Index="114"/>
-</role>
-<role>
-<assumeRoleIf>
-<token Arg="" Label="AssumeRoleIf">
-<token Arg="" Label="AreSameActor">
-<token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="ThisSubject"/>
-</token>
-</token>
-</assumeRoleIf>
-<optionlink Index="115"/>
-<optionlink Index="116"/>
-<optionlink Index="117"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35269,8 +34784,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </script>
-<optionlink Index="118"/>
-<optionlink Index="119"/>
+<optionlink Index="115"/>
+<optionlink Index="116"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35310,8 +34825,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </script>
-<optionlink Index="120"/>
-<optionlink Index="121"/>
+<optionlink Index="117"/>
+<optionlink Index="118"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35319,7 +34834,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="122"/>
+<optionlink Index="119"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35330,7 +34845,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="123"/>
+<optionlink Index="120"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35341,7 +34856,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="124"/>
+<optionlink Index="121"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35383,8 +34898,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="125"/>
-<optionlink Index="126"/>
+<optionlink Index="122"/>
+<optionlink Index="123"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35423,7 +34938,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="127"/>
+<optionlink Index="124"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35466,7 +34981,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="128"/>
+<optionlink Index="125"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35484,7 +34999,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="-0.8" Label="BNumberConstant"/>
 </token>
 </script>
-<optionlink Index="129"/>
+<optionlink Index="126"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35492,8 +35007,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="130"/>
-<optionlink Index="131"/>
+<optionlink Index="127"/>
+<optionlink Index="128"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35558,9 +35073,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </script>
-<optionlink Index="132"/>
-<optionlink Index="133"/>
-<optionlink Index="134"/>
+<optionlink Index="129"/>
+<optionlink Index="130"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35629,7 +35143,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </script>
-<optionlink Index="135"/>
+<optionlink Index="131"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35637,8 +35151,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="136"/>
-<optionlink Index="137"/>
+<optionlink Index="132"/>
+<optionlink Index="133"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35660,9 +35174,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </script>
-<optionlink Index="138"/>
-<optionlink Index="139"/>
-<optionlink Index="140"/>
+<optionlink Index="134"/>
+<optionlink Index="135"/>
+<optionlink Index="136"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35734,7 +35248,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="141"/>
+<optionlink Index="137"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35742,8 +35256,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="142"/>
-<optionlink Index="143"/>
+<optionlink Index="138"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35763,7 +35276,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="144"/>
+<optionlink Index="139"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35783,9 +35296,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="145"/>
-<optionlink Index="146"/>
-<optionlink Index="147"/>
+<optionlink Index="140"/>
+<optionlink Index="141"/>
+<optionlink Index="142"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35805,7 +35318,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="148"/>
+<optionlink Index="143"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35831,7 +35344,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="149"/>
+<optionlink Index="144"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35866,7 +35379,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="150"/>
+<optionlink Index="145"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35874,7 +35387,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="151"/>
+<optionlink Index="146"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35900,7 +35413,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="152"/>
+<optionlink Index="147"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35926,7 +35439,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="153"/>
+<optionlink Index="148"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35934,8 +35447,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="154"/>
-<optionlink Index="155"/>
+<optionlink Index="149"/>
+<optionlink Index="150"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -35983,9 +35496,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </script>
-<optionlink Index="156"/>
-<optionlink Index="157"/>
-<optionlink Index="158"/>
+<optionlink Index="151"/>
+<optionlink Index="152"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36025,9 +35537,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="Mini"/>
 </token>
 </script>
-<optionlink Index="159"/>
-<optionlink Index="160"/>
-<optionlink Index="161"/>
+<optionlink Index="153"/>
+<optionlink Index="154"/>
+<optionlink Index="155"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36035,8 +35547,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="162"/>
-<optionlink Index="163"/>
+<optionlink Index="156"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36044,8 +35555,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="164"/>
-<optionlink Index="165"/>
+<optionlink Index="157"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36062,8 +35572,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="166"/>
-<optionlink Index="167"/>
+<optionlink Index="158"/>
+<optionlink Index="159"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36071,7 +35581,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="168"/>
+<optionlink Index="160"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36099,9 +35609,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </script>
-<optionlink Index="169"/>
-<optionlink Index="170"/>
-<optionlink Index="171"/>
+<optionlink Index="161"/>
+<optionlink Index="162"/>
+<optionlink Index="163"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36166,9 +35676,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </script>
-<optionlink Index="172"/>
-<optionlink Index="173"/>
-<optionlink Index="174"/>
+<optionlink Index="164"/>
+<optionlink Index="165"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36176,8 +35685,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="175"/>
-<optionlink Index="176"/>
+<optionlink Index="166"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36185,8 +35693,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="177"/>
-<optionlink Index="178"/>
+<optionlink Index="167"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36194,7 +35701,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="179"/>
+<optionlink Index="168"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36226,8 +35733,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="RoleBNumberBox"/>
 </token>
 </script>
-<optionlink Index="180"/>
-<optionlink Index="181"/>
+<optionlink Index="169"/>
+<optionlink Index="170"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36241,7 +35748,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="182"/>
+<optionlink Index="171"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36265,8 +35772,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </script>
-<optionlink Index="183"/>
-<optionlink Index="184"/>
+<optionlink Index="172"/>
+<optionlink Index="173"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36274,8 +35781,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="185"/>
-<optionlink Index="186"/>
+<optionlink Index="174"/>
+<optionlink Index="175"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36286,7 +35793,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="187"/>
+<optionlink Index="176"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36320,7 +35827,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="0.99" Label="BNumberConstant"/>
 </token>
 </script>
-<optionlink Index="188"/>
+<optionlink Index="177"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36341,7 +35848,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="189"/>
+<optionlink Index="178"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36388,8 +35895,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="190"/>
-<optionlink Index="191"/>
+<optionlink Index="179"/>
+<optionlink Index="180"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36415,8 +35922,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="192"/>
-<optionlink Index="193"/>
+<optionlink Index="181"/>
+<optionlink Index="182"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36424,7 +35931,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="194"/>
+<optionlink Index="183"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36433,7 +35940,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="NOT">
@@ -36448,7 +35955,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <script>
 <token Arg="" Label="AdjustPActorTrait">
 <token Arg="Clout" Label="ActorTraitConstant"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="" Label="BInverse">
 <token Arg="" Label="BNumber2UNumber">
 <token Arg="" Label="GDP">
@@ -36466,7 +35973,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <Description>ad hoc role for Pakistan counterrevolution</Description>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisDirObject"/>
@@ -36475,8 +35982,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="195"/>
-<optionlink Index="196"/>
+<optionlink Index="184"/>
+<optionlink Index="185"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36484,7 +35991,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="197"/>
+<optionlink Index="186"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36492,7 +35999,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="198"/>
+<optionlink Index="187"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36500,8 +36007,8 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="199"/>
-<optionlink Index="200"/>
+<optionlink Index="188"/>
+<optionlink Index="189"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36509,7 +36016,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="201"/>
+<optionlink Index="190"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36531,7 +36038,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="202"/>
+<optionlink Index="191"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36539,7 +36046,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
-<optionlink Index="203"/>
+<optionlink Index="192"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36556,9 +36063,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="204"/>
-<optionlink Index="205"/>
-<optionlink Index="206"/>
+<optionlink Index="193"/>
+<optionlink Index="194"/>
+<optionlink Index="195"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36566,6 +36073,45 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
+<optionlink Index="196"/>
+<optionlink Index="197"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="FatesRole"/>
+</token>
+</assumeRoleIf>
+<optionlink Index="198"/>
+<optionlink Index="199"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="FatesRole"/>
+</token>
+</assumeRoleIf>
+<optionlink Index="200"/>
+<optionlink Index="201"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="FatesRole"/>
+</token>
+</assumeRoleIf>
+<optionlink Index="202"/>
+<optionlink Index="203"/>
+<optionlink Index="204"/>
+<optionlink Index="205"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="FatesRole"/>
+</token>
+</assumeRoleIf>
+<optionlink Index="206"/>
 <optionlink Index="207"/>
 <optionlink Index="208"/>
 </role>
@@ -36576,6 +36122,13 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </assumeRoleIf>
 <optionlink Index="209"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="FatesRole"/>
+</token>
+</assumeRoleIf>
 <optionlink Index="210"/>
 </role>
 <role>
@@ -36594,52 +36147,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </assumeRoleIf>
 <optionlink Index="213"/>
-<optionlink Index="214"/>
-<optionlink Index="215"/>
-<optionlink Index="216"/>
-</role>
-<role>
-<assumeRoleIf>
-<token Arg="" Label="AssumeRoleIf">
-<token Arg="" Label="FatesRole"/>
-</token>
-</assumeRoleIf>
-<optionlink Index="217"/>
-<optionlink Index="218"/>
-<optionlink Index="219"/>
-</role>
-<role>
-<assumeRoleIf>
-<token Arg="" Label="AssumeRoleIf">
-<token Arg="" Label="FatesRole"/>
-</token>
-</assumeRoleIf>
-<optionlink Index="220"/>
-</role>
-<role>
-<assumeRoleIf>
-<token Arg="" Label="AssumeRoleIf">
-<token Arg="" Label="FatesRole"/>
-</token>
-</assumeRoleIf>
-<optionlink Index="221"/>
-</role>
-<role>
-<assumeRoleIf>
-<token Arg="" Label="AssumeRoleIf">
-<token Arg="" Label="FatesRole"/>
-</token>
-</assumeRoleIf>
-<optionlink Index="222"/>
-<optionlink Index="223"/>
-</role>
-<role>
-<assumeRoleIf>
-<token Arg="" Label="AssumeRoleIf">
-<token Arg="" Label="FatesRole"/>
-</token>
-</assumeRoleIf>
-<optionlink Index="224"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -36650,8 +36157,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="225"/>
-<optionlink Index="226"/>
+<optionlink Index="214"/>
 </role>
 </roleSet>
 <categorySet>
@@ -36672,7 +36178,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -36968,7 +36476,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -36997,40 +36507,6 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </script>
 </socket>
 </verb>
-<verb Label="OK" Witnesses="SUBJECT_ONLY">
-<description> </description>
-<hijackable>false</hijackable>
-<occupiesDirObject>false</occupiesDirObject>
-<timeToPrepare>1</timeToPrepare>
-<timeToExecute>1</timeToExecute>
-<category>System</category>
-<expression>sympathetic</expression>
-<trivial_Momentous>0.0</trivial_Momentous>
-<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="false" Witness="true">
-<suffix>
-<token Arg="" Label="WordsocketText">
-<token Arg="" Label="TextConstant"/>
-</token>
-</suffix>
-<script>
-<token Arg="" Label="WordsocketText">
-<token Arg="" Label="TheName"/>
-</token>
-</script>
-</socket>
-<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
-<suffix>
-<token Arg="" Label="WordsocketText">
-<token Arg="" Label="TextConstant"/>
-</token>
-</suffix>
-<script>
-<token Arg="" Label="WordsocketText">
-<token Arg="" Label="TheName"/>
-</token>
-</script>
-</socket>
-</verb>
 <verb Label="depart for" Witnesses="ANYBODY_ON_STAGE">
 <description> </description>
 <hijackable>false</hijackable>
@@ -37047,7 +36523,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -37105,7 +36583,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -37295,7 +36775,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -37350,7 +36832,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -37398,7 +36882,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -37430,7 +36916,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <script>
 <token Arg="" Label="WordsocketText">
 <token Arg="" Label="Concat">
-<token Arg="" Label="AccusativePronoun"/>
+<token Arg="" Label="AccusativePronoun">
+<token Arg="" Label="ThisDirObject"/>
+</token>
 <token Arg="," Label="TextConstant"/>
 </token>
 </token>
@@ -37642,7 +37130,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -37657,7 +37147,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="TheName"/>
 <token Arg="pressures" Label="TextConstant"/>
@@ -37851,7 +37341,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="Fate" Label="ActorConstant"/>
 </token>
 <token Arg="Terrorists" Label="TextConstant"/>
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </token>
 </script>
@@ -37994,7 +37486,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -38247,7 +37741,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -38625,7 +38121,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="AccusativePronoun"/>
+<token Arg="" Label="AccusativePronoun">
+<token Arg="" Label="ThisDirObject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -38664,7 +38162,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="GenitivePronoun"/>
+<token Arg="" Label="GenitivePronoun">
+<token Arg="" Label="This5Actor"/>
+</token>
 </token>
 </script>
 </socket>
@@ -38851,7 +38351,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -38887,7 +38389,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 <token Arg="agree to ask" Label="TextConstant"/>
 <token Arg="agrees to ask" Label="TextConstant"/>
@@ -38896,7 +38398,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="This4Actor"/>
+</token>
 </token>
 </script>
 </socket>
@@ -38908,7 +38412,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="AccusativePronoun"/>
+<token Arg="" Label="AccusativePronoun">
+<token Arg="" Label="This5Actor"/>
+</token>
 </token>
 </script>
 </socket>
@@ -38951,7 +38457,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisDirObject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 <token Arg="agree to ask" Label="TextConstant"/>
 <token Arg="agrees to ask" Label="TextConstant"/>
@@ -38960,7 +38466,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="This8Actor"/>
+</token>
 </token>
 </script>
 </socket>
@@ -39114,7 +38622,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -39271,7 +38781,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -39409,7 +38921,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -39569,7 +39083,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -39729,7 +39245,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -39875,7 +39393,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40021,7 +39541,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40167,7 +39689,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40262,7 +39786,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40516,7 +40042,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -40648,7 +40176,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41172,7 +40702,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41287,7 +40819,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41403,7 +40937,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41473,7 +41009,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41585,7 +41123,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41697,7 +41237,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41806,7 +41348,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -41998,7 +41542,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42173,7 +41719,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42257,7 +41805,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42601,7 +42151,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42691,7 +42243,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -42930,7 +42484,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 <token Arg="send" Label="TextConstant"/>
 <token Arg="sends" Label="TextConstant"/>
@@ -42939,7 +42493,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43494,7 +43050,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43613,7 +43171,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43681,7 +43241,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43880,7 +43442,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -43998,7 +43562,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -44184,7 +43750,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -44390,7 +43958,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -44416,7 +43986,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="AccusativePronoun"/>
+<token Arg="" Label="AccusativePronoun">
+<token Arg="" Label="ThisDirObject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -44560,7 +44132,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -44959,7 +44533,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -45258,7 +44834,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -45324,7 +44902,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -45402,7 +44982,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <script>
 <token Arg="" Label="SetPPrestige">
 <token Arg="" Label="ThisDirObject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 <token Arg="-0.8" Label="BNumberConstant"/>
 </token>
 </script>
@@ -45466,7 +45046,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -45780,7 +45362,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -45886,7 +45470,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="AccusativePronoun"/>
+<token Arg="" Label="AccusativePronoun">
+<token Arg="" Label="ThisDirObject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -46358,7 +45944,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="idolizes" Label="TextConstant"/>
 <token Arg="" Label="PPrestige">
 <token Arg="" Label="ThisDirObject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -46386,7 +45972,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="colossal" Label="TextConstant"/>
 <token Arg="" Label="PClout">
 <token Arg="" Label="ThisDirObject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -46557,7 +46143,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -47037,7 +46625,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -47063,7 +46653,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="WordsocketText">
 <token Arg="" Label="Concat3">
 <token Arg="to spend more time with " Label="TextConstant"/>
-<token Arg="" Label="GenitivePronoun"/>
+<token Arg="" Label="GenitivePronoun">
+<token Arg="" Label="ThisDirObject"/>
+</token>
 <token Arg=" family." Label="TextConstant"/>
 </token>
 </token>
@@ -47375,7 +46967,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -47388,20 +46982,20 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="TopGreaterThanBottom(BNumber)">
 <token Arg="" Label="Clout">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="OriginalClout">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="increased " Label="TextConstant"/>
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="TopLessThanBottom(BNumber)">
 <token Arg="" Label="Clout">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="OriginalClout">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="decreased " Label="TextConstant"/>
@@ -47411,10 +47005,10 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="TopGreaterThanBottom(BNumber)">
 <token Arg="" Label="Clout">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="OriginalClout">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="CalculatedText7">
@@ -47429,10 +47023,10 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <Description>expands the difference</Description>
 <token Arg="" Label="BDifference">
 <token Arg="" Label="Clout">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="OriginalClout">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -47440,10 +47034,10 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="TopLessThanBottom(BNumber)">
 <token Arg="" Label="Clout">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="OriginalClout">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="CalculatedText7">
@@ -47458,10 +47052,10 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <Description>expands the difference</Description>
 <token Arg="" Label="BDifference">
 <token Arg="" Label="OriginalClout">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="Clout">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -47483,7 +47077,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="considerable" Label="TextConstant"/>
 <token Arg="colossal" Label="TextConstant"/>
 <token Arg="" Label="Clout">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="; and American global prestige has " Label="TextConstant"/>
@@ -47491,20 +47085,20 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="TopGreaterThanBottom(BNumber)">
 <token Arg="" Label="Prestige">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="OriginalPrestige">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="increased " Label="TextConstant"/>
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="TopLessThanBottom(BNumber)">
 <token Arg="" Label="Prestige">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="OriginalPrestige">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="decreased " Label="TextConstant"/>
@@ -47515,10 +47109,10 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="TopGreaterThanBottom(BNumber)">
 <token Arg="" Label="Prestige">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="OriginalPrestige">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="CalculatedText7">
@@ -47533,10 +47127,10 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <Description>expands the difference</Description>
 <token Arg="" Label="BDifference">
 <token Arg="" Label="Prestige">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="OriginalPrestige">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -47544,10 +47138,10 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="TopLessThanBottom(BNumber)">
 <token Arg="" Label="Prestige">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="OriginalPrestige">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="CalculatedText7">
@@ -47562,10 +47156,10 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <Description>expands the difference</Description>
 <token Arg="" Label="BDifference">
 <token Arg="" Label="OriginalPrestige">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="Prestige">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -47585,7 +47179,7 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 <token Arg="considerable" Label="TextConstant"/>
 <token Arg="colossal" Label="TextConstant"/>
 <token Arg="" Label="Prestige">
-<token Arg="" Label="Protagonist"/>
+<token Arg="USA" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="." Label="TextConstant"/>
@@ -47653,7 +47247,9 @@ This policy means that Palestine recognizes the State of Israel as the legitimat
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
