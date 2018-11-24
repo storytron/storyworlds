@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="65" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="66" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright/>
-<startingVerb Label="X said so"/>
+<startingVerb Label="deny"/>
+<startingRole Label="DirObject"/>
+<startingOption Label="you're lying!"/>
 <propTraits>
 <attribute Label="macho"/>
 <attribute Label="cinematic"/>
@@ -9387,6 +9389,154 @@
 </script>
 </socketSpecs>
 </option>
+<option Label="thanks for telling me">
+<acceptable>
+<token Arg="" Label="OptionAcceptable">
+<token Arg="" Label="true"/>
+</token>
+</acceptable>
+<desirable>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</desirable>
+<socketSpecs Index="0">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="1">
+<script>
+<token Arg="" Label="AcceptableVerbs">
+<token Arg="" Label="AllVerbsWhich">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="2">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="CandidateActor"/>
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="3">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="CandidateActor"/>
+<token Arg="" Label="This4Actor"/>
+</token>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+</option>
+<option Label="oh really?">
+<acceptable>
+<token Arg="" Label="OptionAcceptable">
+<token Arg="" Label="true"/>
+</token>
+</acceptable>
+<desirable>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</desirable>
+<socketSpecs Index="0">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="1">
+<script>
+<token Arg="" Label="AcceptableVerbs">
+<token Arg="" Label="AllVerbsWhich">
+<token Arg="" Label="true"/>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="2">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="CandidateActor"/>
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+<socketSpecs Index="3">
+<script>
+<token Arg="" Label="AcceptableActors">
+<token Arg="" Label="AllActorsWho">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="CandidateActor"/>
+<token Arg="" Label="This4Actor"/>
+</token>
+</token>
+</token>
+</script>
+<script>
+<token Arg="" Label="Desirable">
+<token Arg="0.0" Label="BNumberConstant"/>
+</token>
+</script>
+</socketSpecs>
+</option>
 <option Label="you said that">
 <acceptable>
 <token Arg="" Label="OptionAcceptable">
@@ -10144,154 +10294,6 @@
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="CandidateActor"/>
 <token Arg="" Label="ThisSubject"/>
-</token>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-</option>
-<option Label="thanks for telling me">
-<acceptable>
-<token Arg="" Label="OptionAcceptable">
-<token Arg="" Label="true"/>
-</token>
-</acceptable>
-<desirable>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</desirable>
-<socketSpecs Index="0">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="1">
-<script>
-<token Arg="" Label="AcceptableVerbs">
-<token Arg="" Label="AllVerbsWhich">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="2">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="AreSameActor">
-<token Arg="" Label="CandidateActor"/>
-<token Arg="" Label="ThisSubject"/>
-</token>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="3">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="AreSameActor">
-<token Arg="" Label="CandidateActor"/>
-<token Arg="" Label="This4Actor"/>
-</token>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-</option>
-<option Label="oh really?">
-<acceptable>
-<token Arg="" Label="OptionAcceptable">
-<token Arg="" Label="true"/>
-</token>
-</acceptable>
-<desirable>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</desirable>
-<socketSpecs Index="0">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="1">
-<script>
-<token Arg="" Label="AcceptableVerbs">
-<token Arg="" Label="AllVerbsWhich">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="2">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="AreSameActor">
-<token Arg="" Label="CandidateActor"/>
-<token Arg="" Label="ThisSubject"/>
-</token>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="3">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="AreSameActor">
-<token Arg="" Label="CandidateActor"/>
-<token Arg="" Label="This4Actor"/>
 </token>
 </token>
 </token>
@@ -11094,24 +11096,23 @@
 <token Arg="" Label="AssumeRoleIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="ThisSubject"/>
+<token Arg="" Label="ThisDirObject"/>
 </token>
 </token>
 </assumeRoleIf>
 <optionlink Index="115"/>
-</role>
-<role>
-<assumeRoleIf>
-<token Arg="" Label="AssumeRoleIf">
-<token Arg="" Label="AreSameActor">
-<token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="ThisDirObject"/>
-</token>
-</token>
-</assumeRoleIf>
 <optionlink Index="116"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="" Label="ThisSubject"/>
+</token>
+</token>
+</assumeRoleIf>
 <optionlink Index="117"/>
-<optionlink Index="118"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -11122,9 +11123,9 @@
 </token>
 </token>
 </assumeRoleIf>
+<optionlink Index="118"/>
 <optionlink Index="119"/>
 <optionlink Index="120"/>
-<optionlink Index="121"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -11135,9 +11136,9 @@
 </token>
 </token>
 </assumeRoleIf>
+<optionlink Index="121"/>
 <optionlink Index="122"/>
 <optionlink Index="123"/>
-<optionlink Index="124"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -11148,6 +11149,7 @@
 </token>
 </token>
 </assumeRoleIf>
+<optionlink Index="124"/>
 <optionlink Index="125"/>
 <optionlink Index="126"/>
 </role>
@@ -15625,7 +15627,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Mike" Label="ActorConstant"/>
 </token>
 <token Arg="ask" Label="TextConstant"/>
 <token Arg="asks" Label="TextConstant"/>
@@ -15735,7 +15737,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Mike" Label="ActorConstant"/>
 </token>
 <token Arg="refuse" Label="TextConstant"/>
 <token Arg="refuses" Label="TextConstant"/>
@@ -15823,7 +15825,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Mike" Label="ActorConstant"/>
 </token>
 <token Arg="agree to" Label="TextConstant"/>
 <token Arg="agrees to" Label="TextConstant"/>
@@ -16506,7 +16508,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Mike" Label="ActorConstant"/>
 </token>
 <token Arg="suggest" Label="TextConstant"/>
 <token Arg="suggests" Label="TextConstant"/>
@@ -16611,7 +16613,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Mike" Label="ActorConstant"/>
 </token>
 <token Arg="accept" Label="TextConstant"/>
 <token Arg="accepts" Label="TextConstant"/>
@@ -16699,7 +16701,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Mike" Label="ActorConstant"/>
 </token>
 <token Arg="reject" Label="TextConstant"/>
 <token Arg="rejects" Label="TextConstant"/>
@@ -19502,7 +19504,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Mike" Label="ActorConstant"/>
 </token>
 <token Arg="answer and say" Label="TextConstant"/>
 <token Arg="answers and says" Label="TextConstant"/>
@@ -19921,7 +19923,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Mike" Label="ActorConstant"/>
 </token>
 <token Arg="ask" Label="TextConstant"/>
 <token Arg="asks" Label="TextConstant"/>
@@ -20114,7 +20116,7 @@
 <token Arg="" Label="WordsocketText">
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Mike" Label="ActorConstant"/>
 <token Arg="" Label="ThisSubject"/>
 </token>
 <token Arg="ask" Label="TextConstant"/>
@@ -20230,7 +20232,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Mike" Label="ActorConstant"/>
 </token>
 <token Arg="don't like that movie." Label="TextConstant"/>
 <token Arg="doesn't like that movie." Label="TextConstant"/>
@@ -20297,7 +20299,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Mike" Label="ActorConstant"/>
 </token>
 <token Arg="propose instead" Label="TextConstant"/>
 <token Arg="proposes instead" Label="TextConstant"/>
@@ -20364,7 +20366,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Mike" Label="ActorConstant"/>
 </token>
 <token Arg="agree to see" Label="TextConstant"/>
 <token Arg="agrees to see" Label="TextConstant"/>
@@ -20568,7 +20570,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Mike" Label="ActorConstant"/>
 </token>
 <token Arg="say" Label="TextConstant"/>
 <token Arg="says" Label="TextConstant"/>
@@ -20653,7 +20655,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Mike" Label="ActorConstant"/>
 </token>
 <token Arg="say" Label="TextConstant"/>
 <token Arg="says" Label="TextConstant"/>
@@ -20934,7 +20936,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Mike" Label="ActorConstant"/>
 </token>
 <token Arg="say" Label="TextConstant"/>
 <token Arg="says" Label="TextConstant"/>
@@ -21453,7 +21455,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Mike" Label="ActorConstant"/>
 </token>
 <token Arg="tell" Label="TextConstant"/>
 <token Arg="tells" Label="TextConstant"/>
@@ -21601,7 +21603,7 @@
 </token>
 </script>
 </socket>
-<rolelink Index="63" Label="DirObject"/>
+<rolelink Index="58" Label="DirObject"/>
 </verb>
 </category>
 <category Label="confrontation">
@@ -21662,7 +21664,7 @@
 <token Arg="" Label="ThisSubject"/>
 </token>
 </script>
-<rolelink Index="58" Label="Subject"/>
+<rolelink Index="59" Label="Subject"/>
 </verb>
 <verb Label="you said that" Witnesses="CUSTOM_SPEC">
 <hijackable>false</hijackable>
@@ -21767,7 +21769,7 @@
 </token>
 </script>
 </socket>
-<rolelink Index="59" Label="DirObject"/>
+<rolelink Index="60" Label="DirObject"/>
 </verb>
 <verb Label="deny" Witnesses="CUSTOM_SPEC">
 <hijackable>false</hijackable>
@@ -21801,7 +21803,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Mike" Label="ActorConstant"/>
 </token>
 <token Arg="deny" Label="TextConstant"/>
 <token Arg="denies" Label="TextConstant"/>
@@ -21821,7 +21823,7 @@
 </token>
 </script>
 </socket>
-<rolelink Index="60" Label="DirObject"/>
+<rolelink Index="61" Label="DirObject"/>
 </verb>
 <verb Label="waffle" Witnesses="CUSTOM_SPEC">
 <hijackable>false</hijackable>
@@ -21870,7 +21872,7 @@
 </token>
 </script>
 </socket>
-<rolelink Index="61" Label="DirObject"/>
+<rolelink Index="62" Label="DirObject"/>
 </verb>
 <verb Label="confirm" Witnesses="CUSTOM_SPEC">
 <hijackable>false</hijackable>
@@ -21959,7 +21961,7 @@
 </token>
 </script>
 </socket>
-<rolelink Index="62" Label="DirObject"/>
+<rolelink Index="63" Label="DirObject"/>
 </verb>
 <verb Label="you're lying!" Witnesses="CUSTOM_SPEC">
 <hijackable>false</hijackable>
