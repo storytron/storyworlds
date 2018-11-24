@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="136" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="137" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright>In this storyworld I was trying to come up with a simpler way to set and reset conversations between two actors than how I initially attempted to do so in the Siboot and InConversation storyworlds.
 
@@ -29,9 +29,9 @@ Some things about the storyworld that you should know:
 7. Fate's "SetActorsInConversation" and "ResetActorConversation" are left visible to everybody everywhere so you can see them in operation.
 
 </copyright>
-<startingVerb Label="greet"/>
-<startingRole Label="ThisSubject"/>
-<startingOption Label="wait"/>
+<startingVerb Label="what are you going to do?"/>
+<startingRole Label="Protagonist"/>
+<startingOption Label="greet"/>
 <propTraits/>
 <propTextTraits/>
 <stageTraits/>
@@ -520,7 +520,7 @@ Some things about the storyworld that you should know:
 <token Arg="" Label="AND">
 <token Arg="" Label="AreSameStage">
 <token Arg="" Label="ActorLocation">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="ActorLocation">
 <token Arg="Kate" Label="ActorConstant"/>
@@ -533,7 +533,7 @@ Some things about the storyworld that you should know:
 <token Arg="" Label="AND">
 <token Arg="" Label="AreSameStage">
 <token Arg="" Label="ActorLocation">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="ActorLocation">
 <token Arg="Sawyer" Label="ActorConstant"/>
@@ -546,7 +546,7 @@ Some things about the storyworld that you should know:
 <token Arg="" Label="AND">
 <token Arg="" Label="AreSameStage">
 <token Arg="" Label="ActorLocation">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="ActorLocation">
 <token Arg="Ana Lucia" Label="ActorConstant"/>
@@ -561,7 +561,7 @@ Some things about the storyworld that you should know:
 <token Arg="" Label="AND">
 <token Arg="" Label="AreSameStage">
 <token Arg="" Label="ActorLocation">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="ActorLocation">
 <token Arg="Hurley" Label="ActorConstant"/>
@@ -574,7 +574,7 @@ Some things about the storyworld that you should know:
 <token Arg="" Label="AND">
 <token Arg="" Label="AreSameStage">
 <token Arg="" Label="ActorLocation">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="ActorLocation">
 <token Arg="Locke" Label="ActorConstant"/>
@@ -689,7 +689,7 @@ Some things about the storyworld that you should know:
 <script>
 <token Arg="" Label="AcceptableActors">
 <token Arg="" Label="Actor2Group">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 </token>
 </script>
@@ -2125,7 +2125,7 @@ Some things about the storyworld that you should know:
 <script>
 <token Arg="" Label="WordsocketText">
 <token Arg="" Label="ActorName">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 </token>
 </script>
