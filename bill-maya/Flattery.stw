@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="267" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="268" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright>FLATTER VERB
 
@@ -37,9 +37,9 @@ SETUP
 3. All actors are located on the Beach Camp stage at start.
 
 </copyright>
-<startingVerb Label="flatter"/>
-<startingRole Label="ThisDirObject"/>
-<startingOption Label="believes"/>
+<startingVerb Label="what are you going to do?"/>
+<startingRole Label="Protagonist"/>
+<startingOption Label="flatter"/>
 <propTraits/>
 <propTextTraits/>
 <stageTraits/>
@@ -710,7 +710,7 @@ SETUP
 <script>
 <token Arg="" Label="AcceptableActors">
 <token Arg="" Label="Actor2Group">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 </token>
 </script>
@@ -2395,7 +2395,7 @@ SETUP
 <script>
 <token Arg="" Label="WordsocketText">
 <token Arg="" Label="ActorName">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 </token>
 </script>
