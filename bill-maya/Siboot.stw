@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="100" version="3192" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="100" version="3193" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright>There are three ways copyright may affect you.
 
@@ -18,9 +18,9 @@ If the images or text are your original creations, you own the copyright to them
 
 You will need to list a copyright notice/attribution in the Copyrights Editor for each embedded text or image (as well as for your storyworld, itself) in the Copyrights Editor.
 Please be sure, before you use any copyrighted work as a source or embedded material for your storyworld, that you fully understand and adhere to the terms of the copyright holder's license—just as you would want and others to do for you.</copyright>
-<startingVerb Label="Felsym is dead!"/>
-<startingRole Label="Fate"/>
-<startingOption Label="what are you going to do?"/>
+<startingVerb Label="SetActorsInConversation"/>
+<startingRole Label="ThisSubject"/>
+<startingOption Label="wait"/>
 <propTraits/>
 <propTextTraits>
 <attribute Label="Desc"/>
@@ -2107,14 +2107,14 @@ own tone of expression.  </description>
 <Description>I can't go to a stage I'm already in</Description>
 <token Arg="" Label="AreSameStage">
 <token Arg="" Label="ActorLocation">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="CandidateStage"/>
 </token>
 </token>
 <token Arg="" Label="KnowsStage">
 <Description>I have to know about the stage</Description>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="" Label="CandidateStage"/>
 </token>
 <token Arg="" Label="AreSameStage">
@@ -2133,7 +2133,7 @@ own tone of expression.  </description>
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameStage">
 <token Arg="" Label="ActorLocation">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 <token Arg="Temple of Siboot" Label="StageConstant"/>
 </token>
@@ -2659,7 +2659,7 @@ own tone of expression.  </description>
 <token Arg="" Label="Returned value">
 <token Arg="" Label="AreSameStage">
 <token Arg="" Label="ActorLocation">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="ActorLocation">
 <token Arg="0" Parameter="true"/>
@@ -3222,7 +3222,7 @@ own tone of expression.  </description>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -4282,7 +4282,7 @@ own tone of expression.  </description>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -4508,7 +4508,7 @@ own tone of expression.  </description>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -5958,7 +5958,7 @@ own tone of expression.  </description>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -6857,7 +6857,7 @@ own tone of expression.  </description>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -7756,7 +7756,7 @@ own tone of expression.  </description>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -8655,7 +8655,7 @@ own tone of expression.  </description>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -10524,7 +10524,7 @@ own tone of expression.  </description>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -11423,7 +11423,7 @@ own tone of expression.  </description>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -12322,7 +12322,7 @@ own tone of expression.  </description>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -13756,140 +13756,140 @@ own tone of expression.  </description>
 </socket>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="The Arrival" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="Armageddonette" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="Governor Grad" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="Walk in the Garden" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="Funeral for a Civilization" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="Stargazing" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="Siboot's Last Sermon" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="Shaleen's Sermon" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="Artigul the Teacher" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="Sufupicank Inauguaral Sermon" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="Mind Combat" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="Feslym's Daughter" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="Gardbore's Secret" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="Sirk The Til" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="Zubi and Locksher" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="Wiki and Skordokott" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="Vetvel at Work" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="Illness" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="The Judge of the Campaign" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
 </script>
 <script>
 <token Arg="" Label="SetKnowsProp">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 <token Arg="Eyes" Label="PropConstant"/>
 <token Arg="" Label="false"/>
 </token>
@@ -14072,7 +14072,7 @@ own tone of expression.  </description>
 <script>
 <token Arg="" Label="WordsocketText">
 <token Arg="" Label="ActorName">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 </token>
 </script>
@@ -14144,7 +14144,7 @@ own tone of expression.  </description>
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 <token Arg="greet" Label="TextConstant"/>
 <token Arg="greets" Label="TextConstant"/>
@@ -14164,7 +14164,7 @@ own tone of expression.  </description>
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisDirObject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="TheName"/>
@@ -14748,7 +14748,7 @@ own tone of expression.  </description>
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisDirObject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="ActorName">
@@ -14817,7 +14817,7 @@ own tone of expression.  </description>
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 <token Arg="wait" Label="TextConstant"/>
 <token Arg="waits" Label="TextConstant"/>
@@ -14909,7 +14909,7 @@ own tone of expression.  </description>
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 <token Arg="want to go to" Label="TextConstant"/>
 <token Arg="wants to go to" Label="TextConstant"/>
@@ -17668,7 +17668,7 @@ own tone of expression.  </description>
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisDirObject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Vetvel" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="TheName"/>
