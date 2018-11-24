@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="144" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="145" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright>InConversation3
 Copyright © 2010 Bill Maya
@@ -626,7 +626,7 @@ Some things about the storyworld that you should know:
 <token Arg="" Label="Returned value">
 <token Arg="" Label="AreSameStage">
 <token Arg="" Label="ActorLocation">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="ActorLocation">
 <token Arg="0" Parameter="true"/>
@@ -710,7 +710,7 @@ Some things about the storyworld that you should know:
 <script>
 <token Arg="" Label="AcceptableActors">
 <token Arg="" Label="Actor2Group">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 </token>
 </script>
@@ -2146,7 +2146,7 @@ Some things about the storyworld that you should know:
 <script>
 <token Arg="" Label="WordsocketText">
 <token Arg="" Label="ActorName">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 </token>
 </script>
