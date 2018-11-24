@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="99" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="100" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright/>
-<startingVerb Label="greet"/>
-<startingRole Label="ThisSubject"/>
-<startingOption Label="wait"/>
+<startingVerb Label="what are you going to do?"/>
+<startingRole Label="Protagonist"/>
+<startingOption Label="greet"/>
 <propTraits/>
 <propTextTraits/>
 <stageTraits/>
@@ -526,7 +526,7 @@
 <script>
 <token Arg="" Label="AcceptableActors">
 <token Arg="" Label="Actor2Group">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 </token>
 </script>
@@ -1897,7 +1897,7 @@
 <script>
 <token Arg="" Label="WordsocketText">
 <token Arg="" Label="ActorName">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 </token>
 </script>
