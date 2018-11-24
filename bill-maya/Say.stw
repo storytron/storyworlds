@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="333" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="334" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright>SAY VERB
 
@@ -13,7 +13,7 @@ SETUP
 
 
 </copyright>
-<startingVerb Label="HandleLove"/>
+<startingVerb Label="HandleFear"/>
 <startingRole Label="Protagonist"/>
 <startingOption Label="say"/>
 <propTraits/>
@@ -550,7 +550,7 @@ SETUP
 <script>
 <token Arg="" Label="AcceptableActors">
 <token Arg="" Label="Actor2Group">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 </token>
 </script>
@@ -2597,7 +2597,7 @@ SETUP
 <token Arg="" Label="AssumeRoleIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 </token>
 </assumeRoleIf>
@@ -2608,7 +2608,7 @@ SETUP
 <token Arg="" Label="AssumeRoleIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 </token>
 </assumeRoleIf>
@@ -2619,7 +2619,7 @@ SETUP
 <token Arg="" Label="AssumeRoleIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 </token>
 </assumeRoleIf>
@@ -3219,7 +3219,7 @@ SETUP
 <script>
 <token Arg="" Label="WordsocketText">
 <token Arg="" Label="ActorName">
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 </token>
 </script>
