@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="99" version="2802" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="99" version="2803" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright/>
-<startingVerb Label="once upon a time"/>
-<startingRole Label="Protagonist"/>
+<startingVerb Label="return greeting"/>
+<startingRole Label="Actor Acknowleged"/>
 <startingOption Label="greet"/>
 <propTraits>
 <attribute Label="Harmless_Lethal"/>
@@ -1855,7 +1855,7 @@
 <token Arg="" Label="AssumeRoleIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 </token>
 </assumeRoleIf>
@@ -2812,7 +2812,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 <token Arg="greet" Label="TextConstant"/>
 <token Arg="greets" Label="TextConstant"/>
@@ -2832,7 +2832,7 @@
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisDirObject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="TheName"/>
@@ -2959,7 +2959,7 @@
 <token Arg="" Label="NOT">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisDirObject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Jack" Label="ActorConstant"/>
 </token>
 </token>
 <token Arg="" Label="ActorName">
