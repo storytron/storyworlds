@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="50" version="45" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="50" version="46" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright/>
-<startingVerb Label="stab"/>
-<startingRole Label="Fate"/>
-<startingOption Label="display attack results"/>
+<startingVerb Label="display attack results"/>
+<startingRole Label="Attacked"/>
 <propTraits>
 <attribute Label="Unweildy_Deadly"/>
 <attribute Label="Awkward_Sturdy"/>
@@ -3042,7 +3041,7 @@
 <script>
 <token Arg="" Label="AcceptableActors">
 <token Arg="" Label="Actor2Group">
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 </token>
 </script>
@@ -4113,7 +4112,7 @@
 <token Arg="" Label="NOT">
 <token Arg="" Label="EventHappened">
 <token Arg="" Label="MainClauseIs">
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 <token Arg="awaken" Label="VerbConstant"/>
 <token Arg="the Pink-skin" Label="ActorConstant"/>
 </token>
@@ -4151,11 +4150,11 @@
 <token Arg="" Label="AND3">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="TopLessThanBottom(Number)">
 <token Arg="" Label="ThisPageNumber"/>
@@ -4207,7 +4206,7 @@
 <token Arg="" Label="AssumeRoleIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 </token>
 </assumeRoleIf>
@@ -4389,7 +4388,7 @@
 <token Arg="" Label="AssumeRoleIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 </token>
 </assumeRoleIf>
@@ -5064,7 +5063,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="TextConstant"/>
 <token Arg="disappears from view." Label="TextConstant"/>
@@ -5077,7 +5076,7 @@
 <token Arg="" Label="AND">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="TopLessThanBottom(Number)">
 <token Arg="" Label="ThisPageNumber"/>
@@ -5429,7 +5428,7 @@
 </socket>
 <script>
 <token Arg="" Label="SetTargetStage">
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 <token Arg="The Ravine" Label="StageConstant"/>
 </token>
 </script>
@@ -5608,7 +5607,7 @@
 </script>
 <script>
 <token Arg="" Label="createMeetingAlarm">
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 <token Arg="the beast" Label="ActorConstant"/>
 </token>
 </script>
@@ -5929,7 +5928,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="CalculatedText3">
 <token Arg="&quot;What happened?&quot;" Label="TextConstant"/>
@@ -6039,7 +6038,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="CalculatedText5">
 <token Arg="&quot;There's a path behind you. Take it.&quot;" Label="TextConstant"/>
@@ -6159,7 +6158,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="CalculatedText3">
 <token Arg="quietly" Label="TextConstant"/>
@@ -6272,7 +6271,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="CalculatedText3">
 <token Arg="&quot;There's a path behind you. Take it.&quot;" Label="TextConstant"/>
@@ -6369,7 +6368,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 <token Arg="'s babbling" Label="TextConstant"/>
 <token Arg="" Label="TextConstant"/>
@@ -6710,7 +6709,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 <token Arg="and submit to" Label="TextConstant"/>
 <token Arg="and submits to" Label="TextConstant"/>
@@ -7031,7 +7030,7 @@
 <Description>Increase only when the protag climbs</Description>
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="Number2BNumber">
 <token Arg="3.6" Label="NumberConstant"/>
@@ -7108,7 +7107,7 @@
 <token Arg="" Label="BNumber2UNumber">
 <token Arg="" Label="PMean_Nice">
 <token Arg="the Pink-skin" Label="ActorConstant"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 </token>
 </token>
@@ -7498,7 +7497,7 @@
 <token Arg="" Label="PickUpperIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 <token Arg="0.0" Label="BNumberConstant"/>
 <token Arg="" Label="Score"/>
@@ -7535,7 +7534,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 <token Arg="and catch your breath" Label="TextConstant"/>
 <token Arg="" Label="Concat3">
@@ -7759,7 +7758,7 @@
 <token Arg="" Label="PickUpperIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisSubject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="Mini"/>
 <token Arg="" Label="Score"/>
@@ -7833,7 +7832,7 @@
 <token Arg="" Label="PickUpperTextIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ThisDirObject"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="the Orc" Label="ActorConstant"/>
 </token>
 <token Arg="" Label="CalculatedText9">
 <token Arg="miss wildly" Label="TextConstant"/>
