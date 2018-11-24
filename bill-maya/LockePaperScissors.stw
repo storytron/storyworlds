@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="55" version="19" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
-<dictionaryVersion Label="0.937"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="55" version="20" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<dictionaryVersion Label="0.939"/>
 <copyright/>
-<startingVerb Label="play"/>
-<startingRole Label="TheSubject"/>
-<startingOption Label="choose"/>
+<startingVerb Label="announce tie"/>
+<startingRole Label="link to Protagonist"/>
+<startingOption Label="play"/>
 <propTraits/>
 <propTextTraits/>
 <stageTraits/>
@@ -436,46 +436,6 @@
 <token Arg="" Label="CandidateQuantifier"/>
 <token Arg="" Label="Score"/>
 </token>
-</token>
-</script>
-</socketSpecs>
-</option>
-<option Label="OK">
-<acceptable>
-<token Arg="" Label="OptionAcceptable">
-<token Arg="" Label="true"/>
-</token>
-</acceptable>
-<desirable>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</desirable>
-<socketSpecs Index="0">
-<script>
-<token Arg="" Label="AcceptableActors">
-<token Arg="" Label="AllActorsWho">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
-</token>
-</script>
-</socketSpecs>
-<socketSpecs Index="1">
-<script>
-<token Arg="" Label="AcceptableVerbs">
-<token Arg="" Label="AllVerbsWhich">
-<token Arg="" Label="true"/>
-</token>
-</token>
-</script>
-<script>
-<token Arg="" Label="Desirable">
-<token Arg="0.0" Label="BNumberConstant"/>
 </token>
 </script>
 </socketSpecs>
@@ -1388,7 +1348,7 @@
 <token Arg="" Label="AssumeRoleIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Locke" Label="ActorConstant"/>
 </token>
 </token>
 </assumeRoleIf>
@@ -1448,19 +1408,18 @@
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="3"/>
 </role>
 <role>
 <assumeRoleIf>
 <token Arg="" Label="AssumeRoleIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Locke" Label="ActorConstant"/>
 </token>
 </token>
 </assumeRoleIf>
+<optionlink Index="3"/>
 <optionlink Index="4"/>
-<optionlink Index="5"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -1471,7 +1430,7 @@
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="6"/>
+<optionlink Index="5"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -1482,7 +1441,7 @@
 </token>
 </token>
 </assumeRoleIf>
-<optionlink Index="7"/>
+<optionlink Index="6"/>
 </role>
 <role>
 <assumeRoleIf>
@@ -1491,6 +1450,14 @@
 <token Arg="" Label="ReactingActor"/>
 <token Arg="Jack" Label="ActorConstant"/>
 </token>
+</token>
+</assumeRoleIf>
+<optionlink Index="7"/>
+</role>
+<role>
+<assumeRoleIf>
+<token Arg="" Label="AssumeRoleIf">
+<token Arg="" Label="FatesRole"/>
 </token>
 </assumeRoleIf>
 <optionlink Index="8"/>
@@ -1502,15 +1469,18 @@
 </token>
 </assumeRoleIf>
 <optionlink Index="9"/>
+<optionlink Index="10"/>
+<optionlink Index="11"/>
 </role>
 <role>
 <assumeRoleIf>
 <token Arg="" Label="AssumeRoleIf">
-<token Arg="" Label="FatesRole"/>
+<token Arg="" Label="AreSameActor">
+<token Arg="" Label="ReactingActor"/>
+<token Arg="Locke" Label="ActorConstant"/>
+</token>
 </token>
 </assumeRoleIf>
-<optionlink Index="10"/>
-<optionlink Index="11"/>
 <optionlink Index="12"/>
 </role>
 <role>
@@ -1518,22 +1488,11 @@
 <token Arg="" Label="AssumeRoleIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Locke" Label="ActorConstant"/>
 </token>
 </token>
 </assumeRoleIf>
 <optionlink Index="13"/>
-</role>
-<role>
-<assumeRoleIf>
-<token Arg="" Label="AssumeRoleIf">
-<token Arg="" Label="AreSameActor">
-<token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
-</token>
-</token>
-</assumeRoleIf>
-<optionlink Index="14"/>
 </role>
 </roleSet>
 <categorySet>
@@ -1554,7 +1513,9 @@
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -1607,7 +1568,9 @@
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -1664,7 +1627,9 @@
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -1722,7 +1687,9 @@
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -1781,7 +1748,9 @@
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -1826,7 +1795,9 @@
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -1843,40 +1814,6 @@
 </script>
 </socket>
 <socket Index="2" Notes="" Presence="REQUIRED" Type="DirObject" Visible="true" Witness="true">
-<suffix>
-<token Arg="" Label="WordsocketText">
-<token Arg="" Label="TextConstant"/>
-</token>
-</suffix>
-<script>
-<token Arg="" Label="WordsocketText">
-<token Arg="" Label="TheName"/>
-</token>
-</script>
-</socket>
-</verb>
-<verb Label="OK" Witnesses="ANYBODY_ON_STAGE">
-<description> </description>
-<hijackable>false</hijackable>
-<occupiesDirObject>false</occupiesDirObject>
-<timeToPrepare>1</timeToPrepare>
-<timeToExecute>1</timeToExecute>
-<category>System</category>
-<expression>null</expression>
-<trivial_Momentous>0.0</trivial_Momentous>
-<socket Index="0" Notes="" Presence="REQUIRED" Type="Subject" Visible="false" Witness="true">
-<suffix>
-<token Arg="" Label="WordsocketText">
-<token Arg="" Label="TextConstant"/>
-</token>
-</suffix>
-<script>
-<token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
-</token>
-</script>
-</socket>
-<socket Index="1" Notes="" Presence="REQUIRED" Type="Verb" Visible="true" Witness="true">
 <suffix>
 <token Arg="" Label="WordsocketText">
 <token Arg="" Label="TextConstant"/>
@@ -1906,7 +1843,9 @@
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -1965,7 +1904,9 @@
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -2022,7 +1963,9 @@
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -2068,7 +2011,9 @@
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -2143,7 +2088,9 @@
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -2206,7 +2153,9 @@
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -2258,7 +2207,9 @@
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -2327,7 +2278,9 @@
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -2396,7 +2349,9 @@
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -2453,7 +2408,9 @@
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -2487,7 +2444,9 @@
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
@@ -2520,7 +2479,9 @@
 </suffix>
 <script>
 <token Arg="" Label="WordsocketText">
-<token Arg="" Label="NominativePronoun"/>
+<token Arg="" Label="NominativePronoun">
+<token Arg="" Label="ThisSubject"/>
+</token>
 </token>
 </script>
 </socket>
