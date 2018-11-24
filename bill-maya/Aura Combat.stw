@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="38" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" inactivityTimeout="15" version="39" xsi:noNamespaceSchemaLocation="Dictionary.xsd">
 <dictionaryVersion Label="0.939"/>
 <copyright/>
-<startingVerb Label="DisplayLockeTSK"/>
-<startingRole Label="Fate"/>
-<startingOption Label="SetJackTSK"/>
+<startingVerb Label="night falling"/>
+<startingRole Label="Protagonist (Locke)"/>
+<startingOption Label="attack"/>
 <propTraits/>
 <propTextTraits/>
 <stageTraits/>
@@ -2008,7 +2008,7 @@
 <token Arg="" Label="AssumeRoleIf">
 <token Arg="" Label="AreSameActor">
 <token Arg="" Label="ReactingActor"/>
-<token Arg="" Label="Protagonist"/>
+<token Arg="Locke" Label="ActorConstant"/>
 </token>
 </token>
 </assumeRoleIf>
