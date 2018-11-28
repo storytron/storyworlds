@@ -4,9 +4,8 @@ _2009-2017 storyworlds created with SWAT by various authors. Many are incomplete
 Note: In all storyworlds the Protagonist operator has been replaced with the protagonist Actor._
 
 ## storytron-original
-_Storyworlds included with the original 2010 version of SWAT_
 
-* BareBones - A minimal storyworld to use as a starting point for your own efforts (sunsetted by File > New)
+* BareBones - A minimal storyworld to use as a starting point for your own efforts (replaced by SWAT > File > New)
 * ChitChat - A sample conversational storyworld with five actors, four stages, five props and a minimal verb set
 
 ## chris-crawford
