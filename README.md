@@ -1,7 +1,7 @@
 # storyworlds
 Storyworlds created with SWAT by various authors from 2009–2017. Many are incomplete sketches due to the sunsetting of the original Storytron technology in 2010.
 
-Note: In all storyworlds the Protagonist operator has been replaced with the protagonist Actor._
+Note: In all storyworlds the Protagonist operator has been replaced with the protagonist Actor.
 
 ## storytron-original
 
