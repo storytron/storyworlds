@@ -35,6 +35,7 @@ Note: In all storyworlds the Protagonist operator has been replaced with the pro
 * OpenClosed - Another meet & greet experiment
 * Say - A fear/trust/love experiment 
 * Siboot - A partial version of Trust & Betrayal: The Legacy of Siboot (T&B)
+* SibootNotebook - A PDF of the notebook I kept during the development of Siboot
 
 ## other-2009
 
